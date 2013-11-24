@@ -1,0 +1,30 @@
+---
+layout: pages
+title: Ecology rocks!
+---
+
+<div id = "blog">
+{% for post in site.posts %}
+	{% if post.categories contains 'blog'%}
+		<h5>{{ post.date | date_to_long_string }}</h5>
+
+		{% if forloop.index < 2 %}
+				<h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h2>{{ post.content | markdownify}}
+		{% elsif forloop.index < 3 %}
+			{% if {{post.content | markdownify | number_of_words}} > 185 %}
+				<h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h2>
+				{{ post.content | markdownify | truncatewords:150 |  remove: '<ul>' |  remove: '<li>' |  remove: '</li>' |  remove: '</ul>'}} 
+				<a href="{{ post.url }}"> continue reading!</a><br><br>
+			{% else %}
+				<h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h2>{{ post.content | markdownify}}
+			{% endif %} 
+		{% elsif forloop.index < 5 %}
+			<h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h3>
+			{{ post.content | markdownify | truncatewords:50 |  remove: '<ul>' |  remove: '<li>' |  remove: '</li>' |  remove: '</ul>' }} 
+            <a href="{{ post.url }}"> continue reading!</a><br><br>
+		{% else %}
+			<h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h3>
+		{% endif %}
+	{%endif%}			
+{% endfor %}
+</div>

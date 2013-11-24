@@ -1,0 +1,24 @@
+
+permalink: /blog/:year/:title 
+server: true
+
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+
+# pygments: true
+encoding: "UTF-8"
+
+
+# Themes are encouraged to use these universal variables 
+# so be sure to set them if your theme uses them.
+#
+title : Florian D. Schneider
+tagline: Science Blog
+author :
+  name : Florian Schneider
+  #email : blah@email.test
+  github : fdschneider
+  #twitter : username
+  #feedburner : feedname
+
+  
+markdown:      maruku

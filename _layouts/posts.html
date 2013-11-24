@@ -1,0 +1,12 @@
+{% include head.html %}
+
+    {% include title.html %}
+	
+	<div class = "content">
+	
+	<h1> {{ page.title | markdownify }} </h1>
+	
+	{{ content }}
+	
+	</div>
+	{% include footer.html%}
