@@ -6,6 +6,7 @@ layout:
 
     {% include title.html %}
 
+<div class = "content">	
 <div id = "blogcontainer">	
 	<div id = "blog">
 		{% for post in site.posts %}
@@ -35,9 +36,16 @@ layout:
 	
 	
 <div id = "rightcontainer">
-
+<div id = "research">
+	{% for post in site.posts %}
+		{% if post.categories contains 'research' or post.categories contains 'about'%}	
+			<h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h2>{{ post.content | markdownify | truncatewords:75 |  remove: '<ul>' |  remove: '<li>' |  remove: '</li>' |  remove: '</ul>'}}
+		{% endif %} 			
+	{% endfor %}
+	
+	</div>
 </div>
-
+</div>
 
 
 {% include footer.html%}
