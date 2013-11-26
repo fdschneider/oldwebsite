@@ -13,19 +13,28 @@ layout:
 		{% if post.categories contains 'blog'%}	
 			<h5>{{ post.date | date_to_long_string }}</h5>
 			{% if forloop.index < 3 %}
-				{% if {{post.content | markdownify | number_of_words}} > 100 %}
-					<h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h2>
-					{{ post.content | markdownify | truncatewords:75 |  remove: '<ul>' |  remove: '<li>' |  remove: '</li>' |  remove: '</ul>'}} 
-					<a href="{{ post.url }}"> continue reading!</a><br><br>
+				<h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h2>
+				{% if post.content contains "<!-- more -->" %}
+					{{ post.content | markdownify | split:"<!-- more -->" | first % }}
+					{% include continue.html %}
+				{% elsif {{post.content | number_of_words}} > 100 %}
+					{{ post.content | markdownify | truncatewords:75 |  remove: '<ul>' |  remove: '<li>' |  remove: '</li>' |  remove: '</ul>' }} 
+					{% include continue.html %}
 				{% else %}
-					<h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h2>{{ post.content | markdownify}}
-			{% endif %} 
-		{% elsif forloop.index < 5 %}
-			<h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h3>
-			{{ post.content | markdownify | truncatewords:20 |  remove: '<ul>' |  remove: '<li>' |  remove: '</li>' |  remove: '</ul>' }} 
-            <a href="{{ post.url }}"> continue reading!</a><br><br>
-		{% else %}
-			<h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h3>
+					{{ post.content | markdownify}}
+				{% endif %} 
+			{% elsif forloop.index < 5 %}
+				<h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h3>
+
+				{% if post.content contains "<!-- more -->" %}
+					{{ post.content | markdownify | split:"<!-- more -->" | first % }}
+					{% include continue.html %}
+				{% else %}	
+					{{ post.content | markdownify | truncatewords:20 |  remove: '<ul>' |  remove: '<li>' |  remove: '</li>' |  remove: '</ul>' }} 
+					{% include continue.html %}
+				{% endif %}
+			{% else %}
+				<h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h3>
 		{% endif %}
 		{% endif %}
 				
@@ -40,6 +49,7 @@ layout:
 	{% for post in site.posts %}
 		{% if post.categories contains 'research' or post.categories contains 'about'%}	
 			<h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h2>{{ post.content | markdownify | truncatewords:75 |  remove: '<ul>' |  remove: '<li>' |  remove: '</li>' |  remove: '</ul>'}}
+			{% include continue.html %}
 		{% endif %} 			
 	{% endfor %}
 	
