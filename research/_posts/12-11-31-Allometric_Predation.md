@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: pages
 category: research
 title: Allometric Predation
 ---
