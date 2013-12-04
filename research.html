@@ -1,0 +1,14 @@
+---
+permalink: /research/
+layout: pages
+title: Research
+---
+
+<div id = "blog">
+{% for page in site.pages %}
+	{% if page.categories contains 'research'%}	
+				<h2>{{ page.title | markdownify }}</h2>
+				{{ page.content | markdownify}}
+	{%endif%}			
+{% endfor %}
+</div>

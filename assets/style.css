@@ -93,6 +93,11 @@ text-align: justify;
 
 }
 
+#rightcontainer img{
+width: 100%;
+
+}
+
 /* continue reading */ 
 .continue{
 font-family: 'vollkornitalic';

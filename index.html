@@ -7,14 +7,7 @@ layout:
     {% include title.html %}
 
 <div class = "content">
-<blockquote cite="">
-<p>Don't you believe in flying saucers, they ask me? Don't you believe in telepathy? — in ancient astronauts? — in the Bermuda triangle? — in life after death?</p>
-<p>No, I reply. No, no, no, no, and again no.</p>
-<p>One person recently, goaded into desperation by the litany of unrelieved negation, burst out "Don't you believe in anything?"</p>
-<p>"Yes", I said. "I believe in evidence. I believe in observation, measurement, and reasoning, confirmed by independent observers. I'll believe anything, no matter how wild and ridiculous, if there is evidence for it. The wilder and more ridiculous something is, however, the firmer and more solid the evidence will have to be."</p>
-<p class = "citing">Isaac Asimov (1997) <i>The Roving Mind</i></p>
-</blockquote>
-
+{% include quote.html %}
 <div id = "blogcontainer">	
 	<br><br>
 	
@@ -56,9 +49,9 @@ layout:
 	
 <div id = "rightcontainer">
 <div id = "research">
-	{% for post in site.posts %}
-		{% if post.categories contains 'research' or post.categories contains 'about'%}	
-			<h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h2>{{ post.content | markdownify | truncatewords:75 |  remove: '<ul>' |  remove: '<li>' |  remove: '</li>' |  remove: '</ul>'}}
+	{% for page in site.pages %}
+		{% if page.categories contains 'research' or page.categories contains 'about'%}	
+			<h2><a href="{{ BASE_PATH }}{{ page.url }}">{{ page.title | markdownify }}</a></h2>{{ page.content | markdownify | truncatewords:75 |  remove: '<ul>' |  remove: '<li>' |  remove: '</li>' |  remove: '</ul>'}}
 			{% include continue.html %}
 		{% endif %} 			
 	{% endfor %}

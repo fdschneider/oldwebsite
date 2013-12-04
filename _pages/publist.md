@@ -1,5 +1,6 @@
 ---
 layout: pages
+categories: publist
 title: List of Publications
 ---
 

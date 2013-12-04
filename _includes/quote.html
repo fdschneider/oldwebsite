@@ -1,0 +1,10 @@
+	{% for page in site.pages %}
+		{% if page.categories contains 'quote'%}
+			<blockquote>
+			{{ page.content | markdownify }}
+			<p>
+			</blockquote>
+			<span class = "citing"> {{ page.author }} ({{ page.date }}) <i>{{page.source}} </i></span>
+			
+		{% endif %}
+	{% endfor %}

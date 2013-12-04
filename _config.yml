@@ -7,6 +7,11 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 # pygments: true
 encoding: "UTF-8"
 
+include: ["_pages","_publications"]
+relative_permalinks: false
+pagecategories: [about, research, publist, quote]
+
+excerpt_separator: "<!-- more -->"
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.

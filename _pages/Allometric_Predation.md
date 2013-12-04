@@ -1,6 +1,6 @@
 ---
 layout: pages
-category: research
+categories: research
 title: Allometric Predation
 ---
 
