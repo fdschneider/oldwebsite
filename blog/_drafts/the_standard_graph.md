@@ -1,11 +1,11 @@
 ---
 layout: posts
-title: The standard graph
+title: The good graph
+categories: graph, science
 --- 
 
 ## to show or not to show
 Original data vs. derivative (e.g. mean, standard deviation)
-
 
 
 ## Cleanliness
