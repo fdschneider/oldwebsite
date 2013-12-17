@@ -1,7 +1,7 @@
 ---
 layout: pages
 categories: research
-title: Project CASCADE
+title: Catastrophic Shifts in Drylands
 tags: CASCADE
 ---
 

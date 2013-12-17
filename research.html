@@ -7,7 +7,7 @@ title: Research
 <div id = "blog">
 {% for page in site.pages %}
 	{% if page.categories contains 'research'%}	
-				<h2>{{ page.title | markdownify }}</h2>
+				<h1>{{ page.title | markdownify }}</h1>
 				{{ page.content | markdownify}}
 	{%endif%}			
 {% endfor %}

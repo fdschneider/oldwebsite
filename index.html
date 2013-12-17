@@ -14,6 +14,7 @@ layout:
 	<div id = "blog">
 		{% for post in site.posts %}
 		{% if post.categories contains 'blog'%}	
+			
 			<h5>{{ post.date | date_to_long_string }}</h5>
 			{% if forloop.index < 3 %}
 				<h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h2>
@@ -39,6 +40,7 @@ layout:
 			{% else %}
 				<h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h3>
 		{% endif %}
+		
 		{% endif %}
 				
 {% endfor %}
