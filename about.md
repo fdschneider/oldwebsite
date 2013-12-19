@@ -25,5 +25,6 @@ I am aiming at a minimalist, print-like layout because I believe that the readin
 This is a static website hosted at [Github.com](https://github.com/fdschneider) benefiting from *GitHub Pages*. The sites are generated using [Jekyll](http://jekyllrb.com/). 
 
 <br>
+The navigation of the web-site is trying to be intuitive. Simple menus without deep hierarchies and teaser overview pages of the blog and research site enable to find content quickly. You can turn pages by clicking on the lower right or left part of the screen. 
 
 Right now, there is no commenting function yet. If you feel like giving feed-back, please don't hesitate to contact me via e-mail. 

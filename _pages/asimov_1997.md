@@ -7,9 +7,9 @@ date: 1997
 source: The Roving Mind
 ---
 
-Don't you believe in flying saucers, they ask me? Don't you believe in telepathy? — in ancient astronauts? — in the Bermuda triangle? — in life after death?
+"Don't you believe in flying saucers", they ask me? "Don't you believe in telepathy? — in ancient astronauts? — in the Bermuda triangle? — in life after death?"
 
-No, I reply. No, no, no, no, and again no.
+"No", I reply. "No, no, no, no, and again no."
 
 One person recently, goaded into desperation by the litany of unrelieved negation, burst out "Don't you believe in anything?"
 

@@ -10,23 +10,24 @@ title: Ecology rocks!
 		<h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h1>
 		
 		{% if forloop.index < 2 %}
-			{{ post.content | markdownify}}
+			{{ post.content | markdownify }}
 
-		{% elsif forloop.index < 3 %}
+		{% elsif forloop.index > 2 and forloop.index < 5 %}
 			{% if post.content contains "<!-- more -->" %}
-					{{ post.content | markdownify | split:"<!-- more -->" | first % }}
+					{{ post.content | split:"<!-- more -->" | first  | markdownify % }}
 					{% include continue.html %}
 
 			{% elsif {{post.content | number_of_words}} > 185 %}
-				{{ post.content | markdownify | truncatewords:150 |  remove: '<ul>' |  remove: '<li>' |  remove: '</li>' |  remove: '</ul>'}} 
+				{{ post.content | markdownify | truncatewords:150  }} 
 				{% include continue.html %}
 			{% else %}
 				{{ post.content | markdownify}}
 			{% endif %} 
-		{% else forloop.index < 5 %}
-			{{ post.content | markdownify | truncatewords:50 |  remove: '<ul>' |  remove: '<li>' |  remove: '</li>' |  remove: '</ul>' }} 
+		{% else forloop.index > 5 %}
+			{{ post.content | markdownify | truncatewords:50 }} <!--% remove: '<ul>' |  remove: '<li>' |  remove: '</li>' |  remove: '</ul>'-->
             {% include continue.html %}
 		{% endif %}
-	{%endif%}			
+	{%endif%}
+		<br>
 {% endfor %}
 </div>

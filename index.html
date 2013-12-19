@@ -8,6 +8,7 @@ layout:
 
 <div class = "content">
 {% include quote.html %}
+
 <div id = "blogcontainer">	
 	<br><br>
 	
@@ -19,7 +20,7 @@ layout:
 			{% if forloop.index < 3 %}
 				<h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h2>
 				{% if post.content contains "<!-- more -->" %}
-					{{ post.content | markdownify | split:"<!-- more -->" | first % }}
+					{{ post.content | split:"<!-- more -->" | first | markdownify% }}
 					{% include continue.html %}
 				{% elsif {{post.content | number_of_words}} > 100 %}
 					{{ post.content | markdownify | truncatewords:75 |  remove: '<ul>' |  remove: '<li>' |  remove: '</li>' |  remove: '</ul>' }} 
@@ -53,7 +54,9 @@ layout:
 <div id = "research">
 	{% for page in site.pages %}
 		{% if page.categories contains 'research' or page.categories contains 'about'%}	
-			<h2><a href="{{ BASE_PATH }}{{ page.url }}">{{ page.title | markdownify }}</a></h2>{{ page.content | markdownify | truncatewords:75 |  remove: '<ul>' |  remove: '<li>' |  remove: '</li>' |  remove: '</ul>'}}
+			<h2><a href="{{ BASE_PATH }}{{ page.url }}">{{ page.title | markdownify }}</a></h2>
+			
+			{{ page.content | split:"<!-- more -->" | first | markdownify }}
 			{% include continue.html %}
 		{% endif %} 			
 	{% endfor %}

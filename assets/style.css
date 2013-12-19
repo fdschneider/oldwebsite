@@ -5,9 +5,9 @@ font-size:100%;
 font-family: 'vollkornregular', times, 'serif'; 
 }
 
-h1 {font-size:200%; text-align: center; margin-top:100px; letter-spacing: +3%;}
-h2 {font-size:140%; margin-top: 40px}
-h3 {font-size:110%;}
+h1 {font-size:165%; text-align: center; padding: 0px 50px;}
+h2 {font-size:140%; text-align: left;}
+h3 {font-size:110%; text-align: left;}
 
 hr {width:250px; color:black; background: black; height:4px; text-align:center; }
 th {background-color:#D3D3D3;}
@@ -95,7 +95,6 @@ text-align: justify;
 
 #rightcontainer img{
 width: 100%;
-
 }
 
 /* continue reading */ 
@@ -121,6 +120,7 @@ font-size: 75%;
 letter-spacing: -3%;
 margin-top: 2em;
 text-align: right;
+margin-bottom: 3em;
 }
 
 /* site footer */ 
@@ -150,15 +150,16 @@ color:#BBBBBB;
 
 #blog h2{font-size: 150%; margin-top: 2px; margin-bottom: 5px;}
 #blog h3{font-size: 125%; margin-top: 2px; margin-bottom: 5px;}
-#blog h5{font-size: 75%; margin-bottom: 5px;}
-#blog li{list-style-type: none;}
+#blog h5{font-size: 75%; margin-bottom: 5px;  font-weight: 400;}
+
 
 .turn{
 position: fixed;
 height: 100%;
-width: 150px;
+width: 250px;
 font-family: 'vollkorn'; 
-top: 50%;
+top: 10%;
+padding-top: 200px;
 margin: 0px 0px 0px 0px;
 text-align: center; 
 font-size: 450%;

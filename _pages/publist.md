@@ -16,12 +16,14 @@ Brose, U., Dunne, J.A., Montoya, J.M., Petchey, O.L., **Schneider, F.D.**, Jacob
 
 **Schneider, F.D.**, Scheu, S. &amp; Brose, U. (2012) [Body mass constraints on feeding rates determine the consequences of predator loss](http://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2012.01750.x/full). *Ecology Letters*, 15:436–443, doi: 10.1111/j.1461-0248.2012.01750.x
 
-## Other publications
 
+## Other publications
 
 **Schneider, F.D.** (2012) [Predator diversity and ecosystem functioning: An allometric approach](http://tuprints.ulb.tu-darmstadt.de/3206/). Dissertation at Technische Universität Darmstadt, Darmstadt, GER.
 
 ## Conference Contributions
+
+### Talks
 
 **Schneider, F.D.**, Brose, U.(2013) TITLE , *Conference of the International Ecological Society (INTECOL)*, London, UK, 18.09.2013 
 
