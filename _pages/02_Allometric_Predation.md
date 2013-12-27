@@ -1,7 +1,8 @@
 ---
-layout: pages
+permalink: /projects/allometricfeeding/
+layout: project
 categories: research
-title: Allometric Predation
+title: Allometric feeding in multi-predator communities 
 date: 2012-11-30
 teaser: Many aspects of predation can be estimated from the species' average individual body mass. This allows the prediction of quality and quantity of interaction strengths in natural food webs.
 ---

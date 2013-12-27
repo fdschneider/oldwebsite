@@ -1,14 +1,12 @@
 {% include head.html %}
 
     {% include title.html %}
-	
+
+
 	<div class = "content">
-	<h5> {{ page.date | date_to_long_string }} </h5>
-	<h1>  {{ page.title | markdownify }} </h1>
 	
+	<h1> {{ page.title | markdownify }} </h1>
 	{{ content }}
-	
 	</div>
 	
-	{% include buttons.html%}
 	{% include footer.html%}

@@ -1,11 +1,10 @@
 {% include head.html %}
 
     {% include title.html %}
-	
 
-	<div class = "content">
+	<div class = "pagetitle">  {{ page.title | markdownify }} </div>
 	
-	<h1 style = "font-size:200%; text-align: center; margin-top:100px; letter-spacing: +3%;">  {{ page.title | markdownify }} </h1>
+	<div class = "content">
 	
 	{{ content }}
 	</div>

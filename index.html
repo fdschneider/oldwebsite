@@ -32,7 +32,7 @@ layout:
 				<h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h3>
 
 				{% if post.content contains "<!-- more -->" %}
-					{{ post.content | markdownify | split:"<!-- more -->" | first % }}
+					{{ post.content| split:"<!-- more -->" | first | markdownify  % }}
 					{% include continue.html %}
 				{% else %}	
 					{{ post.content | markdownify | truncatewords:20 |  remove: '<ul>' |  remove: '<li>' |  remove: '</li>' |  remove: '</ul>' }} 
@@ -52,12 +52,18 @@ layout:
 	
 <div id = "rightcontainer">
 <div id = "research">
+
 	{% for page in site.pages %}
-		{% if page.categories contains 'research' or page.categories contains 'about'%}	
+		{% if page.categories contains 'about'%}	
+			{{ page.content | split:"<!-- more -->" | first | markdownify }}
+		{% endif %} 			
+	{% endfor %}
+
+	{% for page in site.pages %}
+		{% if page.categories contains 'research'%}	
 			<h2><a href="{{ BASE_PATH }}{{ page.url }}">{{ page.title | markdownify }}</a></h2>
 			
 			{{ page.content | split:"<!-- more -->" | first | markdownify }}
-			{% include continue.html %}
 		{% endif %} 			
 	{% endfor %}
 	

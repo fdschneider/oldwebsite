@@ -1,14 +1,19 @@
 ---
 permalink: /research/
 layout: pages
-title: Research
+title: Research projects
 ---
 
 <div id = "blog">
 {% for page in site.pages %}
 	{% if page.categories contains 'research'%}	
-				<h1>{{ page.title | markdownify }}</h1>
-				{{ page.content | markdownify}}
+	<div>
+		<h1>{{ page.title | markdownify }}</h1>
+		{{ page.content | split:"<!-- more -->" | first  | markdownify }}
+
+		{% include continue.html %}
+		
+	</div>
 	{%endif%}			
 {% endfor %}
 </div>

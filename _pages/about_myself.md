@@ -5,9 +5,13 @@ categories: about
 title: About myself
 ---
 
-My name is Florian Schneider and I am an ecologist. I am currently working at the Centre National de la Recherche Scientifique (CNRS) in Montpellier, France. 
+My name is Florian Dirk Schneider and I am an ecologist. 
 
-I am biologist by training and specialised on theoretical ecology. This means I am formulating ecological processes in simple math and run simulations on the computer. This allows for a better understanding of those processes, which usually are so complex that they cannot be assessed by experimentation. <!-- more --> 
+I am currently working at the Centre National de la Recherche Scientifique (CNRS) in Montpellier, France. 
+
+I am biologist by training and specialised on theoretical ecology. This means I am formulating ecological processes in simple math and run simulations on the computer. This allows for a better understanding of those processes, which usually are so complex that they cannot be assessed by experimentation. 
+
+<!-- more --> 
 
 Nonetheless, experimentation with real organisms and investigation of data from the field are necessary to inform those models. They allow to extract realistic parameters and provide test data to evaluate the model. If a model fails to reproduce the observations in controlled experiments, it is not taking all the relevant elements of the system into account. 
 
