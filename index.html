@@ -61,12 +61,30 @@ layout:
 
 	{% for page in site.pages %}
 		{% if page.categories contains 'research'%}	
-			<h2><a href="{{ BASE_PATH }}{{ page.url }}">{{ page.title | markdownify }}</a></h2>
-			
-			{{ page.content | split:"<!-- more -->" | first | markdownify }}
+			<div class="clickdiv">
+			<a href="{{ BASE_PATH }}{{ page.url }}"></a>
+			<h2>{{ page.title | markdownify }}</h2>
+			{{ page.image | markdownify }}
+			{{ page.teaser }}
+			</div>
 		{% endif %} 			
 	{% endfor %}
 	
+	<h2>Some relevant publications</h2>
+	<div class = "publist">
+		<ul>
+		{% for page in site.pages %}
+			{% if page.categories contains 'article' and page.priority contains 'A'%}	
+			
+			 <li>
+			 <a href= "{{page.URL}}">{{ page.authors }} ({{ page.date | date: "%Y"}}), {{ page.title }}, <i>{{ page.journal }}</i>, {{page.volume}}:{{ page.pages }}</a>
+			 </li>
+			
+			{% endif %} 			
+		{% endfor %}
+		</ul>
+	</div>
+			
 	</div>
 </div>
 

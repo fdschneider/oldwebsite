@@ -3,9 +3,11 @@
     {% include title.html %}
 	
 	<div class = "content">
-	<h5> {{ page.date | date_to_long_string }} </h5>
-	<h1>  {{ page.title | markdownify }} </h1>
 	
+	<h1>  {{ page.title | markdownify }} </h1>
+	<h5 style = "text-align: center; margin-bottom: 2em;"> <i>by</i> <b>{{ page.author}}</b><i>, {{ page.date | date_to_long_string }}</i> </h5>
+
+	<div class = "teaser"> {{ page.teaser | markdownify }} </div>
 	{{ content }}
 	
 	</div>

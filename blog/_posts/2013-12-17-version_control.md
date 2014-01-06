@@ -2,11 +2,11 @@
 layout: posts
 title: Quality control in computational ecology
 categories: computer, practice, science
+author: Flo Schneider
+teaser: In ecology and biology in general, computational methods are omnipresent nowadays. Still, few biologists do have a professional training in programming. Our standards are quite far from what is considered good practice in computer science and informatics.
 ---
 
-In ecology and biology in general, computational methods are omnipresent nowadays. Still, few biologists do have a professional training in programming. Our standards are quite far from what is considered good practice in computer science and informatics.
-
-Triggered by a workshop on ["what makes good code good" with Mike Jackson on the INTECOL 2013](http://www.software.ac.uk/blog/2013-08-23-what-makes-good-code-good-intecol13) and an unpleasent revelation of errors in one of my own projects, I started investigating options for quality control in computational ecology. 
+Triggered by a workshop on ["what makes good code good" with Mike Jackson at the INTECOL 2013](http://www.software.ac.uk/blog/2013-08-23-what-makes-good-code-good-intecol13) and an unpleasent revelation of errors in one of my own projects, I started investigating options for quality control in computational ecology. 
 
 Recently, the issue is hotly debated in the scientific community. In June 2013, [Carl Boettiger](http://carlboettiger.info/2013/07/09/reviewing-software-revisited.html) initiated a discussion on his blog on how scientific software should be reviewed. It made it into [scientific journals](http://www.nature.com/news/mozilla-plan-seeks-to-debug-scientific-code-1.13812) and prompted an initiative by the [Mozilla Science Lab](https://wiki.mozilla.org/ScienceLab) that aims on installing a review platform for scientific code. 
 

@@ -26,4 +26,5 @@ author :
   #feedburner : feedname
 
   
-markdown:      maruku
+#markdown:      maruku
+markdown:      kramdown

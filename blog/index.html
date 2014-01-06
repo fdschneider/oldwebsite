@@ -6,13 +6,15 @@ title: Ecology rocks!
 <div id = "blog">
 {% for post in site.posts %}
 	{% if post.categories contains 'blog'%}
-		<h5>{{ post.date | date_to_long_string }}</h5>
-		<h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h1>
-		
+	<h1>  {{ post.title | markdownify }} </h1>
+	<h5 style = "text-align: center; margin-bottom: 2em;"> <i>by</i> <b>{{ post.author}}</b><i>, {{ post.date | date_to_long_string }}</i> </h5>
+
 		{% if forloop.index < 2 %}
+			<div class = "teaser"> {{ post.teaser | markdownify }} </div>
 			{{ post.content | markdownify }}
 
 		{% elsif forloop.index > 2 and forloop.index < 5 %}
+			<div class = "teaser"> {{ post.teaser | markdownify }} </div>
 			{% if post.content contains "<!-- more -->" %}
 					{{ post.content | split:"<!-- more -->" | first  | markdownify % }}
 					{% include continue.html %}
