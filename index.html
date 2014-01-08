@@ -7,18 +7,42 @@ layout:
     {% include title.html %}
 
 <div class = "content">
+
+
+<!-- quote of the month element -->
 {% include quote.html %}
 
-<div id = "blogcontainer">	
-	<br><br>
+
+<!-- about myself element -->
+	{% for page in site.pages %}
+<div class = "teaser">
+	<div class="clickdiv">
+			<a href="{{ BASE_PATH }}{{ page.url }}"></a>
+
+		{% if page.categories contains 'about'%}	
+			{{ page.teaser }}
+		{% endif %} 			
+	</div>
+</div>
+	{% endfor %}
+
 	
-	<div id = "blog">
+	<!-- Blog preview on Index Site -->
+	
+<div id = "indexsite">	
+	<table>
+	<tr>
+	<td>	
+	<!-- <div class = "leftcontainer">	-->
+		
 		{% for post in site.posts %}
 		{% if post.categories contains 'blog'%}	
 			
-			<h5>{{ post.date | date_to_long_string }}</h5>
-			{% if forloop.index < 3 %}
+			{% if forloop.index < 2 %}
+				
 				<h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h2>
+				<h5> <i>by</i> <b>{{ post.author}}</b><i>, {{ post.date | date_to_long_string }}</i> </h5>
+				{{ post.teaser }}
 				{% if post.content contains "<!-- more -->" %}
 					{{ post.content | split:"<!-- more -->" | first | markdownify% }}
 					{% include continue.html %}
@@ -28,9 +52,23 @@ layout:
 				{% else %}
 					{{ post.content | markdownify}}
 				{% endif %} 
-			{% elsif forloop.index < 5 %}
-				<h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h3>
-
+		{% endif %}
+		
+		{% endif %}
+				
+	{% endfor %}	
+		
+	</td>		
+	<td style = "width:30px"> </td>
+	<!-- <div class = "rightcontainer">	-->
+	<td>	
+		{% for post in site.posts %}
+		{% if post.categories contains 'blog'%}	
+				
+			{% if forloop.index == 2 %}
+				<h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h2>
+				<h5> <i>by</i> <b>{{ post.author}}</b><i>, {{ post.date | date_to_long_string }}</i> </h5>
+				{{ post.teaser }}
 				{% if post.content contains "<!-- more -->" %}
 					{{ post.content| split:"<!-- more -->" | first | markdownify  % }}
 					{% include continue.html %}
@@ -38,38 +76,53 @@ layout:
 					{{ post.content | markdownify | truncatewords:20 |  remove: '<ul>' |  remove: '<li>' |  remove: '</li>' |  remove: '</ul>' }} 
 					{% include continue.html %}
 				{% endif %}
-			{% else %}
+			{% elsif forloop.index > 2 and forloop.index < 6 %}
 				<h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h3>
-		{% endif %}
+				<h5> <i>by</i> <b>{{ post.author}}</b><i>, {{ post.date | date_to_long_string }}</i> </h5>
+				
+			{% endif %}
 		
 		{% endif %}
 				
 {% endfor %}
+	</td>
+	</tr>
+	</table>
 	
-	</div>
-</div>
+	<!-- Research overview -->
 	
-	
-<div id = "rightcontainer">
-<div id = "research">
-
-	{% for page in site.pages %}
-		{% if page.categories contains 'about'%}	
-			{{ page.content | split:"<!-- more -->" | first | markdownify }}
-		{% endif %} 			
-	{% endfor %}
 
 	{% for page in site.pages %}
 		{% if page.categories contains 'research'%}	
-			<div class="clickdiv">
-			<a href="{{ BASE_PATH }}{{ page.url }}"></a>
-			<h2>{{ page.title | markdownify }}</h2>
-			{{ page.image | markdownify }}
-			{{ page.teaser }}
-			</div>
+		
+		<div class="clickdiv">
+		<a href="{{ BASE_PATH }}{{ page.url }}"></a>
+		<table>
+			<tr>
+			<td colspan="3">
+					<h2>{{ page.title | markdownify }}</h2>
+			</td>
+			</tr>
+			<tr>
+		<!-- <div class = "leftcontainer">	-->
+			<td>	
+					{{ page.teaser }}			
+			</td>		
+			<td style = "width:10px"> </td>
+		<!-- <div class = "rightcontainer">	-->
+			<td>	
+					<div style = "float:left; width: 340px">	{{ page.image | markdownify }} </div>
+
+			</td>
+			</tr>
+			</table>
+			
+</div>		
 		{% endif %} 			
 	{% endfor %}
 	
+	<!-- Publication list overview -->
+		
 	<h2>Some relevant publications</h2>
 	<div class = "publist">
 		<ul>
@@ -84,9 +137,11 @@ layout:
 		{% endfor %}
 		</ul>
 	</div>
-			
-	</div>
-</div>
+	
+
+
+	
+
 
 
 </div>

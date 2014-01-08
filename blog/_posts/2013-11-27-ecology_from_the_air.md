@@ -1,7 +1,7 @@
 ---
 layout: posts
 category: blog
-title: "Greg Asner: Ecology from the air"
+title: "Ecology from the air"
 date: 2013-11-27 12:00:00
 author: Flo Schneider
 teaser: ""

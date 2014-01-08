@@ -10,7 +10,7 @@ volume: 367
 pages: 2903-2912
 URL: http://rstb.royalsocietypublishing.org/content/367/1605/2903.full
 doi: 10.1098/rstb.2012.0232
-priority: A
+priority: B
 ---
 
 ## Abstract

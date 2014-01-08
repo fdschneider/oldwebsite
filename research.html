@@ -1,16 +1,16 @@
 ---
 permalink: /research/
 layout: pages
-title: Research projects
+title: My research
 ---
 
-<div id = "blog">
+<div>
 
 {% for page in site.pages %}
 	{% if page.categories contains 'about'%}	
 
-		<h1><a href="{{ BASE_PATH }}{{ page.url }}">{{ page.title | markdownify }}</a></h1>
-		
+		<h2><a href="{{ BASE_PATH }}{{ page.url }}">{{ page.title | markdownify }}</a></h2>
+		{{ page.teaser }}
 		{{ page.content | split:"<!-- more -->" | first | markdownify }}
 		
 		<a class = "continue" href="{{ BASE_PATH }}{{ page.url }}"> Read more about myself! </a><br>
@@ -25,20 +25,17 @@ title: Research projects
 	{% if page.categories contains 'research'%}	
 	<div>
 		
-		<h1><a href="{{ BASE_PATH }}{{ page.url }}">{{ page.title | markdownify }}</a></h1>
+	<h2><a href="{{ BASE_PATH }}{{ page.url }}">{{ page.title | markdownify }}</a></h2>
 		
 		<a href="{{ BASE_PATH }}{{ page.url }}">{{ page.image | markdownify }}</a>
 	
 		{{ page.content | split:"<!-- more -->" | first  | markdownify }}
 		
-		<a class = "continue" href="{{ BASE_PATH }}{{ page.url }}"> Read more about this project! <span></span> </a><br>
-		
-	<h2> Project partners</h2> 
+	<h3> Project partners</h3> 
 		{{ page.partners | markdownify}}
 		
-		
-		
-	<h2>Relevant publications</h2>
+
+	<h3> Relevant publications </h3>
 	<div class = "publist">
 		<ul>
 		{% for publication in site.pages %}
@@ -51,8 +48,11 @@ title: Research projects
 			{% endif %} 			
 		{% endfor %}
 		</ul>
+		
 	</div>
 			
+		
+		<a class = "continue" href="{{ BASE_PATH }}{{ page.url }}"> Read more about this project! <span></span> </a><br>
 		
 		
 		
