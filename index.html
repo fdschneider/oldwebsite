@@ -6,6 +6,8 @@ layout:
 
     {% include title.html %}
 
+	<br>
+	<br>
 <div class = "content">
 
 
@@ -26,14 +28,21 @@ layout:
 </div>
 	{% endfor %}
 
-	
+</div>
+
+
+
+<div class = "tile" style= "background-color: #F5F5F5">
+	<h1> <a href="{{ BASE_PATH }}/blog/"> Blog </a></h1>
+		
+	<div class = "indexcontent">
+
 	<!-- Blog preview on Index Site -->
-	
-<div id = "indexsite">	
-	<table>
-	<tr>
-	<td>	
-	<!-- <div class = "leftcontainer">	-->
+		
+			<table>
+				<tr>
+					<td>	
+					<!-- <div class = "leftcontainer">	-->
 		
 		{% for post in site.posts %}
 		{% if post.categories contains 'blog'%}	
@@ -58,10 +67,10 @@ layout:
 				
 	{% endfor %}	
 		
-	</td>		
-	<td style = "width:30px"> </td>
-	<!-- <div class = "rightcontainer">	-->
-	<td>	
+					</td>		
+					<td style = "width:30px"> </td>
+					<!-- <div class = "rightcontainer">	-->
+					<td>	
 		{% for post in site.posts %}
 		{% if post.categories contains 'blog'%}	
 				
@@ -85,18 +94,29 @@ layout:
 		{% endif %}
 				
 {% endfor %}
-	</td>
-	</tr>
-	</table>
-	
+					</td>
+				</tr>
+			</table>
+
+	</div>
+
+</div>
+			
 	<!-- Research overview -->
 	
 
+
+<div class = "tile" style= "background-color:#F5F5F5">
+	<h1> <a href="{{ BASE_PATH }}/research/"> Research </a></h1>
+	
+	
 	{% for page in site.pages %}
 		{% if page.categories contains 'research'%}	
-		
+		<div class = "indexcontent">
+
 		<div class="clickdiv">
 		<a href="{{ BASE_PATH }}{{ page.url }}"></a>
+		
 		<table>
 			<tr>
 			<td colspan="3">
@@ -106,7 +126,7 @@ layout:
 			<tr>
 		<!-- <div class = "leftcontainer">	-->
 			<td>	
-					{{ page.teaser }}			
+					{{ page.teaser | markdownify }}			
 			</td>		
 			<td style = "width:10px"> </td>
 		<!-- <div class = "rightcontainer">	-->
@@ -117,11 +137,18 @@ layout:
 			</tr>
 			</table>
 			
-</div>		
+			</div>
+			</div>		
 		{% endif %} 			
 	{% endfor %}
 	
+</div> <!-- end tile Research -->
+
 	<!-- Publication list overview -->
+
+<div class = "tile" style= "background-color:#F5F5F5">
+<h1> Publications </h1>
+<div class = "indexcontent">
 		
 	<h2>Some relevant publications</h2>
 	<div class = "publist">
@@ -138,11 +165,8 @@ layout:
 		</ul>
 	</div>
 	
-
-
-	
-
-
+		
+</div>
 
 </div>
 

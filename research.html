@@ -10,7 +10,8 @@ title: My research
 	{% if page.categories contains 'about'%}	
 
 		<h2><a href="{{ BASE_PATH }}{{ page.url }}">{{ page.title | markdownify }}</a></h2>
-		{{ page.teaser }}
+			<div class = "teaser"> </div>
+			{{ page.teaser | markdownify }} 
 		{{ page.content | split:"<!-- more -->" | first | markdownify }}
 		
 		<a class = "continue" href="{{ BASE_PATH }}{{ page.url }}"> Read more about myself! </a><br>
@@ -28,8 +29,9 @@ title: My research
 	<h2><a href="{{ BASE_PATH }}{{ page.url }}">{{ page.title | markdownify }}</a></h2>
 		
 		<a href="{{ BASE_PATH }}{{ page.url }}">{{ page.image | markdownify }}</a>
-	
-		{{ page.content | split:"<!-- more -->" | first  | markdownify }}
+			<div class = "teaser"> </div>
+		 {{ page.teaser | markdownify }}
+		 {{ page.content | split:"<!-- more -->" | first  | markdownify }}
 		
 	<h3> Project partners</h3> 
 		{{ page.partners | markdownify}}
@@ -42,7 +44,7 @@ title: My research
 			{% if publication.categories contains 'article' and publication.tag contains page.tag%}	
 			
 			 <li>
-			 <a href= "{{page.URL}}">{{ publication.authors }} ({{ publication.date | date: "%Y"}}), {{ publication.title }}, <i>{{ publication.journal }}</i>, {{publication.volume}}:{{ publication.pages }}</a>
+			 <a href= "{{publication.URL}}">{{ publication.authors }} ({{ publication.date | date: "%Y"}}), {{ publication.title }}, <i>{{ publication.journal }}</i>, {{publication.volume}}:{{ publication.pages }}</a>
 			 </li>
 			
 			{% endif %} 			
