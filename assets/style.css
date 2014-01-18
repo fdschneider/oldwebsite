@@ -11,9 +11,9 @@ font-family: 'vollkornregular', times, 'serif';
 
 p { margin-top: 5px; margin-bottom: 5px;}
 
-h1 {font-size:2.3em; line-height: 130%; font-weight: 700; text-align: center; padding: 0px -50px; }
-h2 {font-size:1.7em; line-height: 130%; text-align: left; margin-top: 1.5em;}
-h3 {font-size:1.2em; line-height: 130%; text-align: left; margin-top: 1.5em;}
+h1 {font-size:2.3em; line-height: 110%; font-weight: 700; text-align: center; padding: 0px -50px; }
+h2 {font-size:1.7em; line-height: 120%; text-align: left; margin-top: 1.5em;}
+h3 {font-size:1.2em; line-height: 120%; text-align: left; margin-top: 1.5em;}
 h5 {font-size: 0.7em; margin-bottom: 5px;  font-weight: 400;}
 
 a:link {color:#000000; text-decoration:none;}
@@ -74,17 +74,24 @@ color:#555555;
 }
 
 .pagetitle{
-font-family: 'vollkornitalic';
-position: fixed; top: 0px; right: 10px;
-/*width: 100px; */
-margin: 0px 0px 0px 0px;
-/*padding: 0px 20px 5px 20px;*/
-color:#BBBBBB;
-font-size: 88%;
-text-align: right;
-letter-spacing: 3%;
-z-index: 2;
 }
+
+.pagetitle h1{
+font-family: 'vollkornbold_italic';
+font-size: 1.8em;
+letter-spacing: -3%;
+text-align: left;
+float: left; clear: left;
+font-weight: 800;
+color: #BBBBBB;
+padding-left: 20px;
+padding-top: 10px;
+}
+
+.pagetitle h1 a:link {text-decoration:none; color: #BBBBBB;}
+.pagetitle h1 a:visited {text-decoration:none; color: #BBBBBB;}
+.pagetitle h1 a:hover{text-decoration:none; color: #222222;}
+
 
 /* Publication list*/
 
@@ -142,7 +149,7 @@ padding: 0px;
 /*z-index: -1;*/
 background-color: white;
 }
-
+/*
 .tile h1{
 font-family: 'vollkornbold_italic';
 letter-spacing: -3%;
@@ -157,6 +164,7 @@ padding-top: 0px;
 .tile h1 a:link {text-decoration:none; color: #BBBBBB;}
 .tile h1 a:visited {text-decoration:none; color: #BBBBBB;}
 .tile h1 a:hover{text-decoration:none; color: #222222;}
+*/
 
 .citing {
 font-size: 75%;

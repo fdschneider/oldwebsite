@@ -20,4 +20,4 @@ In 2011, for his undergrad project Malte Jochum from Göttingen initiated a clos
 
 ## Dave's Experiment at Queen's University Marine Lab
 
-In 2013, 
+In 2013, Dave McElroy, Eoin O'Gorman and Mark Emmerson set up an experiment at Queen's University Lab in Portaferry, Northern Ireland. The 

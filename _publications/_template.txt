@@ -1,0 +1,17 @@
+---
+layout: publication
+categories: article, dissertation, talk, poster, other
+tag: 
+title: Nested sampling effects in complex food webs: decrypting the biodiversity-function relationship
+authors: Schneider, F.D. & Brose U.
+date: 7.-9.09.2010
+journal: 
+issue:
+pages:
+doi:
+URL:
+publisher:
+city: Leeds, UK 
+conference: Annual Meeting of the British Ecological Society (BES)
+priority:
+---

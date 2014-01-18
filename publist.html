@@ -1,0 +1,66 @@
+---
+permalink: /publications/
+layout: pages
+title: Publications
+---
+
+
+	<div class = "publist">
+	
+	
+	<h2>Scientific articles</h2>
+	<div class = "publist">
+		<ul>
+		{% for publication in site.pages %}
+			{% if publication.categories contains 'article'%}	
+			
+			 <li>
+			 <a href= "{{page.URL}}">{{ publication.authors }} ({{ publication.date | date: "%Y"}}), {{ publication.title }}, <i>{{ publication.journal }}</i>, {{publication.volume}}:{{ publication.pages }}</a>
+			 </li>
+			
+			{% endif %} 			
+		{% endfor %}
+		</ul>
+	</div>
+			
+	<h2>Dissertation</h2>
+	<div class = "publist">
+		<ul>
+		{% for publication in site.pages %}
+			{% if publication.categories contains 'dissertation'%}	
+			
+			 <li>
+			 <a href= "{{page.URL}}">{{ publication.authors }} ({{ publication.date | date: "%Y"}}), {{ publication.title }}, <i>{{ publication.journal }}</i>, {{publication.publisher}}, {{ publication.city }}</a>
+			 </li>
+			
+			{% endif %} 			
+		{% endfor %}
+		</ul>
+	</div>
+	
+	
+	
+	<h2>Conference contributions</h2>
+
+	<h3>Presentations</h3>
+	
+	<div class = "publist">
+		<ul>
+		{% for publication in site.pages %}
+			{% if publication.categories contains 'talk'%}	
+			
+			 <li>
+			 {{ publication.authors }}, {{ publication.title }}, <i>{{ publication.conference }}</i>, {{publication.city}}, {{ publication.date }}
+			 </li>
+			
+			{% endif %} 			
+		{% endfor %}
+		</ul>
+	</div>
+	
+	
+	
+	</div>
+	
+
+	

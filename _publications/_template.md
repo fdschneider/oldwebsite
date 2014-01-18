@@ -1,18 +1,17 @@
 ---
 layout: publication
-categories: publist, article, poster, other, talk
-tags:
-	- allometry
-	- marine
-	- predators
+categories: article, dissertation, talk, poster, other
+tag: 
 title: 
-authors:
-date:
-journal:
+authors: 
+date: 
+journal: 
 issue:
 pages:
 doi:
 URL:
-place: 
-abstract:
+publisher:
+city: 
+conference: 
+priority:
 ---
