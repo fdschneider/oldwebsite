@@ -1,4 +1,4 @@
----
+ ---
 layout: posts
 title: Keep your knowledge up to date
 categories: computer, practice, science
@@ -18,9 +18,13 @@ My strategies for keeping track of published papers (relevance decreasing):
  6. Setting up paper alerts for certain topics *and* for fellow researchers 
  
  
-You can think of your search strategy as a model that identifies the relevance of a paper to the topic of question. In that case, my list of search strategies is somehow messy and not very parsimonious. Usually, in meta-analyses or systematic reviews you would define only two or three very clear criteria that return a list of papers that you consider relevant. In reality, literature research is more gradual, however. 
+You can think of your search strategy as a model that identifies the relevance of a paper to the topic of question. In that case, my list of search strategies is somehow messy and not very parsimonious. Usually, in meta-analyses or systematic reviews you would define only two or three very clear criteria that return a list of papers that you consider relevant. In reality, literature research is more gradual. 
 
- 
+In fact, the **google filter bubble** might be a real danger here: The amazing thing about search engines is that they know better what we are looking for than we do ourselves. Their filters know which papers were referenced together before, which scientific concepts are related to each other, which ideas build upon each other. If we relied on what google scholar returns as relevant and we would cite only that in articles, we would cement that association. It's a positive feed back. We would be caught in a filter bubble. 
+
+Would we be able to make associations of ideas that nobody else put together before. Would it be the end of originality?
+
+I really think that it is a good idea to read in breadth and never entirely rely on search engines. 
 A bit more detail: 
 
 ## Following references and citations in papers I read
