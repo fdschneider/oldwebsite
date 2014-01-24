@@ -14,6 +14,16 @@
 
 ### Blogging
 
+### The professional website
+How you build a website as a professional researcher. 
+#### Why do it
+#### Full service or hosted dynamic (CMS) or hosted static (Jekyll) 
+#### Minimal content
+#### Publication list
+Metadata for Bibliographic tools using COinS
+#### SEO 
+Paper pages, metatags, head, sitemap, structure
+be active
 
 
 

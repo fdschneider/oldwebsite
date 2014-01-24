@@ -1,0 +1,39 @@
+{% include head.html %}
+
+    {% include title.html %}
+	
+	<div class = "pagetitle"><a href = "{{ site.url }}/research/"> <h1> Research </h1> </div>
+
+	<div class = "content">
+	
+	<h1> {{ page.title | markdownify }} </h1>
+	{{ page.image | markdownify }}
+	
+	{{ content }}
+		
+	<h2> Project partners </h2>
+	{{ page.partners | markdownify}}
+	
+	
+	
+	<h2>Relevant publications</h2>
+	<div class = "publist">
+		<ul>
+		{% for publication in site.pages %}
+			{% if publication.categories contains 'article' and publication.tag contains page.tag%}	
+			
+			 <li>
+			 <a href= "{{page.URL}}">{{ publication.authors }} ({{ publication.date | date: "%Y"}}), {{ publication.title }}, <i>{{ publication.journal }}</i>, {{publication.volume}}:{{ publication.pages }}</a>
+			 </li>
+			
+			{% endif %} 			
+		{% endfor %}
+		</ul>
+	</div>
+			
+	
+	
+	</div>
+	
+
+	{% include footer.html%}
