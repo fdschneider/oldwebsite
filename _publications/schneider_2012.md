@@ -1,5 +1,6 @@
 ---
-layout: pub
+permalink: /publications/schneider_2012/
+layout: article
 categories: article
 tag: predation, allometry
 title: "Body mass constraints on feeding rates determine the consequences of predator loss"

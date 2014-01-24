@@ -14,11 +14,12 @@ p { margin-top: 5px; margin-bottom: 5px;}
 h1 {font-size:2.3em; line-height: 110%; font-weight: 700; text-align: center; padding: 0px -50px; }
 h2 {font-size:1.7em; line-height: 120%; text-align: left; margin-top: 1.5em;}
 h3 {font-size:1.2em; line-height: 120%; text-align: left; margin-top: 1.5em;}
-h5 {font-size: 0.7em; margin-bottom: 5px;  font-weight: 400;}
+h5 {font-size: 0.85em; margin-top: -3px; margin-bottom: 5px;  font-weight: 400; line-height: 120%;  margin-bottom: 10px;}
+
 
 a:link {color:#000000; text-decoration:none;}
-a:visited {color:#000000;text-decoration:none;}
-a:hover {color:#888888;text-decoration:none;}
+a:visited {color:#000000;text-decoration:none; }
+a:hover {color:#888888;text-decoration:none; }
 
 blockquote{
 font-family: 'vollkornitalic';
@@ -44,6 +45,15 @@ font-weight: 500;
 line-height: 120%;
 margin: 0px -50px;
 margin-bottom: 25px;
+}
+
+.two-col {
+       -moz-column-count: 2;
+       -moz-column-gap: 20px;
+       -webkit-column-count: 2;
+       -webkit-column-gap: 20px;
+	   font-size: 0.85em;  line-height: 110%; margin-bottom: 5px;  font-weight: 400;
+
 }
 
 
@@ -149,22 +159,7 @@ padding: 0px;
 /*z-index: -1;*/
 background-color: white;
 }
-/*
-.tile h1{
-font-family: 'vollkornbold_italic';
-letter-spacing: -3%;
-text-align: left;
-float: left; clear: left;
-font-weight: 800;
-color: #BBBBBB;
-padding-left: 20px;
-padding-top: 0px;
-}
 
-.tile h1 a:link {text-decoration:none; color: #BBBBBB;}
-.tile h1 a:visited {text-decoration:none; color: #BBBBBB;}
-.tile h1 a:hover{text-decoration:none; color: #222222;}
-*/
 
 .citing {
 font-size: 75%;
@@ -177,7 +172,7 @@ text-align: right;
 position: relative;
 width: 700px;
 max-width: 80%;
-text-align: justify;
+text-align: left;
 margin: 0px auto 0px auto;
 padding: 10px 0 10px 0;
 font-size: 85%;
@@ -187,12 +182,11 @@ line-height: 140%;
 
 .indexcontent h2{font-size: 1.4em; line-height: 1.3em; margin-top: 20px; margin-bottom: 0px;}
 .indexcontent h3{font-size: 1.1em; line-height: 1.1em; margin-top: 20px; margin-bottom: 0px;}
-.indexcontent h5{margin-top:-5px; margin-bottom: 10px;}
+/*.indexcontent h5{line-height: 1.1em;  margin-bottom: 10px;}
+*/
+.indexcontent table{table-layout:fixed; border:0;  empty-cells:hide; background-color:transparent;}
+.indexcontent td{width:350px; padding: 0px; vertical-align: top; background-color:transparent;}
 
-.indexcontent table{table-layout:fixed; border=0;  empty-cells:hide; background-color:transparent;}
-.indexcontent td{width:335px; padding: 0px; vertical-align: top; background-color:transparent;}
-
- 
 .indexcontent .obj{
 text-align: center; 
 width: 100%;
@@ -202,22 +196,6 @@ height: 265px;
 .indexcontent img{
 width: 100%;
 }
-
-.indexcontent .leftcontainer{ 
-float: left;
-width: 320px;
-/*margin: 0px 260px auto 0px;*/
-
-}
-
-
-.indexcontent .rightcontainer{ 
-float: right;
-width: 320px;
-/*margin: 0px 0px auto 360px;*/
-
-}
-
 
 
 /* continue reading */ 
@@ -229,29 +207,6 @@ color:#555555;
 float: right;
 line-height: inherit;
 }
-
-.clickdiv{
-	position: relative;
-}
-
-.clickdiv a{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    text-decoration: none; /* No underlines on the link */
-    z-index: +1;  /*Places the link above everything else in the div */
-    background-color: #FFF; /* Fix to make div clickable in IE */
-    opacity: 0; /* Fix to make div clickable in IE */
-    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
-}
-
-.clickdiv:hover {color: #888888; } /* background-color:#DDDDDD; */
-
-.clickdiv a:link {text-decoration:none;}
-.clickdiv a:visited {text-decoration:none;}
-.clickdiv a:hover{text-decoration:none;}
 
 /* site footer */ 
 #footer{
@@ -324,6 +279,29 @@ z-index: 1;
 hr {width:250px; color:black; background: black; height:4px; text-align:center; }
 th {background-color:#D3D3D3;}
 td {background-color:#FFFAF0;}
+
+.clickdiv{
+	position: relative;
+}
+
+.clickdiv a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link *
+    z-index: +1;  /*Places the link above everything else in the div *
+    background-color: #FFF; /* Fix to make div clickable in IE *
+    opacity: 0; /* Fix to make div clickable in IE *
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE *
+}
+
+.clickdiv:hover {color: #888888; } /* background-color:#DDDDDD; *
+
+.clickdiv a:link {text-decoration:none;}
+.clickdiv a:visited {text-decoration:none;}
+.clickdiv a:hover{text-decoration:none;}
 
 
 */

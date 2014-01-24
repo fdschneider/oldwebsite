@@ -9,35 +9,49 @@ title:
 
 	<br>
 	<br>
+
 <div class = "content">
-
-
-<!-- quote of the month element -->
-{% include quote.html %}
-
-
-<!-- about myself element -->
-	{% for page in site.pages %}
-<div class = "teaser">
-	<div class="clickdiv">
-			<a href="{{ BASE_PATH }}{{ page.url }}"></a>
-
-		{% if page.categories contains 'about'%}	
-			{{ page.teaser }}
-		{% endif %} 			
-	</div>
-</div>
-	{% endfor %}
-
-</div>
-
-
-
-<div class = "tile" style= "background-color: #F5F5F5">
-	<div class = "pagetitle">
-		<h1> <a href="{{ BASE_PATH }}/blog/"> Blog </a></h1>
-	</div>
 	
+	<!-- newest blogpost -->
+	
+		{% for post in site.posts %}
+		{% if post.categories contains 'blog'%}	
+			
+			{% if forloop.index < 2 %}
+				
+				<h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h1>
+				<h5 style = "text-align: center; margin-bottom: 2em;"> <i>by</i> <b>{{ post.author}}</b><i>, {{ post.date | date_to_long_string }}</i> </h5>
+
+				<div class = "teaser"> {{ post.teaser | markdownify  }} </div>
+	
+				{% include continue.html %}
+				
+				
+			{% endif %} 
+		{% endif %}
+		
+		{% endfor %}
+
+	{% include sep %}
+		
+	<!-- about myself -->
+	
+	<!-- about myself element -->
+		{% for page in site.pages %}
+			{% if page.categories contains 'about'%}	
+			
+				<p class = "two-col">	{{ page.teaser }} </p>
+				
+		<a class = "continue" href="{{ BASE_PATH }}{{ page.url }}"> Read more about myself! </a><br>
+			
+			{% endif %} 			
+		{% endfor %}
+		
+	{% include sep %}
+	</div>
+
+	<!-- bloglist and research -->
+		
 	<div class = "indexcontent">
 
 	<!-- Blog preview on Index Site -->
@@ -47,34 +61,9 @@ title:
 					<td>	
 					<!-- <div class = "leftcontainer">	-->
 		
-		{% for post in site.posts %}
-		{% if post.categories contains 'blog'%}	
-			
-			{% if forloop.index < 2 %}
-				
-				<h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h2>
-				<h5> <i>by</i> <b>{{ post.author}}</b><i>, {{ post.date | date_to_long_string }}</i> </h5>
-				{{ post.teaser }}
-				{% if post.content contains "<!-- more -->" %}
-					{{ post.content | split:"<!-- more -->" | first | markdownify% }}
-					{% include continue.html %}
-				{% elsif {{post.content | number_of_words}} > 100 %}
-					{{ post.content | markdownify | truncatewords:75 |  remove: '<ul>' |  remove: '<li>' |  remove: '</li>' |  remove: '</ul>' }} 
-					{% include continue.html %}
-				{% else %}
-					{{ post.content | markdownify}}
-				{% endif %} 
-		{% endif %}
+		<h5><i>more from the blog:</i></h5>
 		
-		{% endif %}
-				
-	{% endfor %}	
-		
-					</td>		
-					<td style = "width:30px"> </td>
-					<!-- <div class = "rightcontainer">	-->
-					<td>	
-		{% for post in site.posts %}
+	{% for post in site.posts %}
 		{% if post.categories contains 'blog'%}	
 				
 			{% if forloop.index == 2 %}
@@ -95,75 +84,47 @@ title:
 			{% endif %}
 		
 		{% endif %}
-				
-{% endfor %}
+					
+	{% endfor %}
+					</td>		
+					<td style = "width:30px"> </td>
+					<!-- <div class = "rightcontainer">	-->
+					<td>
+
+	<h5><i>about my research:</i></h5>
+	
+	{% for page in site.pages %}
+			{% if page.categories contains 'research'%}	
+		
+				<h2><a href="{{ BASE_PATH }}{{ page.url }}">{{ page.title | markdownify }}</a></h2>
+				 
+				 {{ page.teaser | markdownify  }}			
+				 
+				 <h5>{{ page.partners  | prepend: '*Collaborators:* &nbsp;' | markdownify}}</h5>
+
+			{% endif %} 			
+	{% endfor %}
 					</td>
 				</tr>
 			</table>
 
 	</div>
 
-</div>
-			
-	<!-- Research overview -->
 	
-
-
-<div class = "tile" style= "background-color:#F5F5F5">
-	<div class = "pagetitle">
-		<h1> <a href="{{ BASE_PATH }}/research/"> Research </a></h1>
-	</div>
-	
-	{% for page in site.pages %}
-		{% if page.categories contains 'research'%}	
-		<div class = "indexcontent">
-
-		<div class="clickdiv">
-		<a href="{{ BASE_PATH }}{{ page.url }}"></a>
-		
-		<table>
-			<tr>
-			<td colspan="3">
-					<h2>{{ page.title | markdownify }}</h2>
-			</td>
-			</tr>
-			<tr>
-		<!-- <div class = "leftcontainer">	-->
-			<td>	
-					{{ page.teaser | markdownify }}			
-			</td>		
-			<td style = "width:10px"> </td>
-		<!-- <div class = "rightcontainer">	-->
-			<td>	
-					<div style = "float:left; width: 340px">	{{ page.image | markdownify }} </div>
-
-			</td>
-			</tr>
-			</table>
-			
-			</div>
-			</div>		
-		{% endif %} 			
-	{% endfor %}
-	
-</div> <!-- end tile Research -->
 
 	<!-- Publication list overview -->
+			{% include sep %}
 
-<div class = "tile" style= "background-color:#F5F5F5">
-	<div class = "pagetitle">
-		<a href="{{ BASE_PATH }}/publications/"> <h1> Publications </h1> </a>
-	</div>
-<div class = "indexcontent">
+	<div class = "indexcontent">
 		
-	<h2>Some relevant publications</h2>
+	<h2><a href = "{{ BASE_PATH }}publications/">Selected publications</a></h2>
 	<div class = "publist">
 		<ul>
 		{% for page in site.pages %}
 			{% if page.categories contains 'article' and page.priority contains 'A'%}	
 			
 			 <li>
-			 <a href= "{{page.URL}}">{{ page.authors }} ({{ page.date | date: "%Y"}}), {{ page.title }}, <i>{{ page.journal }}</i>, {{page.volume}}:{{ page.pages }}</a>
+			 <a href= "{{ BASE_PATH }}{{page.url}}">{{ page.authors }} ({{ page.date | date: "%Y"}}), {{ page.title }}, <i>{{ page.journal }}</i>, {{page.volume}}:{{ page.pages }}</a>
 			 </li>
 			
 			{% endif %} 			
@@ -172,8 +133,15 @@ title:
 	</div>
 	
 		
-</div>
+	</div>	
+			<p style = "text-align: center; margin-top: 20px; margin-bottom: 20px">	&diams; </p>
 
-</div>
+	<div class = "content">
+	<!-- quote of the month element -->
+	{% include quote.html %}
+	</div>	
+	
+	<!-- footer -->
+
 
 {% include footer.html%}

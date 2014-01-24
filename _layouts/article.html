@@ -2,25 +2,30 @@
 
     {% include title.html %}
 	
-	<div class = "pagetitle"><a href = "{{ site.url }}/research/"> <h1> Research </h1> </div>
-
+	<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+	
+	
 	<div class = "content">
 	
 	<h1> {{ page.title | markdownify }} </h1>
-	{{ page.image | markdownify }}
 	
-	{{ content }}
+	<h5> {{ page.authors | prepend: '*by* &nbsp;' | markdownify }}</h5>
+	
+	<h5> {{ page.journal | prepend: '*published in* &nbsp;' | markdownify }}</h5>
+	
+	{% include sep %}
+	
+	<div data-badge-type='large-donut' class='altmetric-embed' data-badge-details='right' data-doi='{{page:doi}}'></div>
+	
+	{{ page.content | markdownify }}
+	
 		
-	<h2> Project partners </h2>
-	{{ page.partners | markdownify}}
+	<h2> Related publications </h2>
 	
-	
-	
-	<h2>Relevant publications</h2>
 	<div class = "publist">
 		<ul>
 		{% for publication in site.pages %}
-			{% if publication.categories contains 'article' and publication.tag contains page.tag%}	
+			{% if publication.categories contains 'article' and publication.tag contains page.tag and publication.title != page.title %}	
 			
 			 <li>
 			 <a href= "{{page.URL}}">{{ publication.authors }} ({{ publication.date | date: "%Y"}}), {{ publication.title }}, <i>{{ publication.journal }}</i>, {{publication.volume}}:{{ publication.pages }}</a>

@@ -15,7 +15,7 @@ title: Publications
 			{% if publication.categories contains 'article'%}	
 			
 			 <li>
-			 <a href= "{{page.URL}}">{{ publication.authors }} ({{ publication.date | date: "%Y"}}), {{ publication.title }}, <i>{{ publication.journal }}</i>, {{publication.volume}}:{{ publication.pages }}</a>
+			 <a href= "{{ BASE_PATH }}{{publication.url}}">{{ publication.authors }} ({{ publication.date | date: "%Y"}}), {{ publication.title }}, <i>{{ publication.journal }}</i>, {{publication.volume}}:{{ publication.pages }}</a>
 			 </li>
 			
 			{% endif %} 			
@@ -30,7 +30,7 @@ title: Publications
 			{% if publication.categories contains 'dissertation'%}	
 			
 			 <li>
-			 <a href= "{{page.URL}}">{{ publication.authors }} ({{ publication.date | date: "%Y"}}), {{ publication.title }}, <i>{{ publication.journal }}</i>, {{publication.publisher}}, {{ publication.city }}</a>
+			 <a href= "{{ BASE_PATH }}{{publication.URL}}">{{ publication.authors }} ({{ publication.date | date: "%Y"}}), {{ publication.title }}, <i>{{ publication.journal }}</i>, {{publication.publisher}}, {{ publication.city }}</a>
 			 </li>
 			
 			{% endif %} 			

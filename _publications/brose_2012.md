@@ -1,5 +1,6 @@
 ---
-layout: pub
+permalink: /publications/brose_2012/
+layout: article
 categories: article
 tag: climate
 title: Climate change in size-structured ecosystems

@@ -1,5 +1,6 @@
 ---
-layout: publication
+permalink: /publications/kalinkat_2013/
+layout: article
 categories: article
 tag: allometry, predation
 title: Body masses, functional responses and predator–prey stability

@@ -3,7 +3,7 @@ permalink: /research/about/
 layout: pages
 categories: about
 title: About myself
-teaser: "My name is Florian Dirk Schneider and I am an ecologist. <br> I am biologist by training, specialised on theoretical ecology. This means, I am formulating ecological processes in simple math and run them in computer simulations. This enables a better understanding of these processes, which are usually too complex to assess in experimentation. "
+teaser: "My name is Florian Schneider and I am an ecologist, currently on a PostDoc position in Montpellier, France. <br> More precisely, I am biologist by training, specialised on theoretical ecology. This means, I formulate ecological processes in simple math and run them in computer simulations, enabling their better understanding. "
 ---
 
 Nonetheless, experimentation with real organisms and investigation of data from the field are necessary to inform those models. They allow to extract realistic parameters and provide test data to evaluate the model. If a model fails to reproduce the observations in controlled experiments, it is not taking all the relevant elements of the system into account. 
