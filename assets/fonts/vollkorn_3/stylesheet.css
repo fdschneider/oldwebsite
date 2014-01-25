@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'vollkorn';
+    src: url('EOT/Vollkorn-regular-webfont.eot');
+    src: url('EOT/Vollkorn-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('WOFF/Vollkorn-regular-webfont.woff') format('woff'),
+         url('TTF/Vollkorn-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'vollkornitalic';
+    src: url('EOT/Vollkorn-italic-webfont.eot');
+    src: url('EOT/Vollkorn-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('WOFF/Vollkorn-italic-webfont.woff') format('woff'),
+         url('TTF/Vollkorn-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'vollkornmedium';
+    src: url('EOT/Vollkorn-medium-webfont.eot');
+    src: url('EOT/Vollkorn-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('WOFF/Vollkorn-medium-webfont.woff') format('woff'),
+         url('TTF/Vollkorn-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'vollkornsemibold';
+    src: url('EOT/Vollkorn-semibold-webfont.eot');
+    src: url('EOT/Vollkorn-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('WOFF/Vollkorn-semibold-webfont.woff') format('woff'),
+         url('TTF/Vollkorn-Semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'vollkornbold';
+    src: url('EOT/Vollkorn-bold-webfont.eot');
+    src: url('EOT/Vollkorn-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('WOFF/Vollkorn-bold-webfont.woff') format('woff'),
+         url('TTF/Vollkorn-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'vollkornbolditalic';
+    src: url('EOT/Vollkorn-bolditalic-webfont.eot');
+    src: url('EOT/Vollkorn-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('WOFF/Vollkorn-bolditalic-webfont.woff') format('woff'),
+         url('TTF/Vollkorn-Bolditalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
