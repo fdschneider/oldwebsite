@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: What scientific idea is ready for retirement?
 date: 27/01/2014
 author: Florian Schneider
@@ -21,7 +21,7 @@ A great comment on work ethics in science is commited by [Kathryn Clancy](http:/
 
 ## Of scientists and citizens
 
-Two somewhat complementary titles made me muse about the archetype of scientist and how it is percieved in the public. They question the nature of the scientist: **"Only *Scientists* Can Do Science" by Kate Mills**  and **"Scientists Should Stick to Science"  by Buddhini Samarasinghe**. 
+Two somewhat complementary titles made me muse about the archetype of scientist and how it is percieved in the public. They question the nature of the scientist: [**"Only *Scientists* Can Do Science" by Kate Mills**](http://www.edge.org/response-detail/25504)  and [**"Scientists Should Stick to Science"  by Buddhini Samarasinghe**](http://www.edge.org/response-detail/25464). 
 
 The first challenges that science is only science if done by a certified researcher. It's a plea for a true citizen science, going far beyond the stupid exploitation of brainpower for pattern recognition in Big Data sets (see below). Kate highlights that laymen, particularly children and teenagers, can enhance experimental design and formation of hypotheses, not *although*, but *because* they are untrained. An unprejudiced perspective can break thinking patterns and research traditions. 
 
@@ -29,6 +29,6 @@ The second essay points the other way round. Scientists are citizens, too. They 
 
 ## The world is *sooo* complex
 
-I believe a scientific task for the decades to come is how we implement life's complexity into our perception of nature. It's an epistemological question. We know today that there are no simple answers to complex problems, as (Gavin Schmidt)[http://www.edge.org/response-detail/25484], climatologist at NASAs Goddard Institute, points out in his answer to the Edge Question. We will never be able to resolve reality to a complicated machinery of dynamicaly interacting gears. There is no hope for science in absolute reductionism. Instead science must be percieved as a "method for producing incrementally more useful approximations to reality, not a path to absolute truth". 
+I believe a scientific task for the decades to come is how we implement life's complexity into our perception of nature. It's an epistemological question. We know today that there are no simple answers to complex problems, [**Gavin Schmidt**](http://www.edge.org/response-detail/25484), climatologist at NASAs Goddard Institute, points out in his answer to the Edge Question. We will never be able to resolve reality to a complicated machinery of dynamicaly interacting gears. There is no hope for science in absolute reductionism. Instead science must be percieved as a "method for producing incrementally more useful approximations to reality, not a path to absolute truth". 
 
-If searching for a general principle for living systems, it is not to be found in the numbers itself. It is to be found in structures and rules. A fact that (Gary Marcus)[http://www.edge.org/response-detail/25512] highlights in his critique of the Big Data paradigm. Multivariate datasets, will never tell us something beyond simple correlation. They won't clarify cause and consequence. Big Data will help us to find evidence for well formulated mechanisms, yes, but we still have to figure these out first.
+If searching for a general principle for living systems, it is not to be found in the numbers itself. It is to be found in structures and rules. A fact that [**Gary Marcus**](http://www.edge.org/response-detail/25512) highlights in his critique of the Big Data paradigm. Multivariate datasets, will never tell us something beyond simple correlation. They won't clarify cause and consequence. Big Data will help us to find evidence for well formulated mechanisms, yes, but we still have to figure these out first.
