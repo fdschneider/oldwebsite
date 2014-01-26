@@ -4,7 +4,7 @@ title: What scientific idea is ready for retirement?
 date: 27/01/2014
 author: Florian Schneider
 tag:
-teaser: This year's Edge Question 2014 was answered by 176 scientists, writers, philosophers, ... thinkers. One hundred and sixty seven pleas for a sane way of thinking.
+teaser: This year's Edge Question 2014 was answered by 176 scientists, writers, philosophers, ... thinkers. One hundred and seventy six pleas for a sane way of thinking.
 ---
  
 The authors include renown professors, aged philosophers as well as young PhD candidates. The whole list is overwhelming, but you should definitely take some time to [browse through the list](http://www.edge.org/contributors/what-scientific-idea-is-ready-for-retirement). An impressive range of topics is covered. I enjoyed very much reading over it. I just want to review a few themes that struck my eye. 
