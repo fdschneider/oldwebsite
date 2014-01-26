@@ -1,3 +1,15 @@
+ToDo:
+
+- Partners as yml list with links. 
+- navigation buttons and structure
+- detail on project pages
+- publication pages:
+	- layout
+- about paragraph on index site. Gravatar. small table of Github, university page, contact, Public key.  
+- color, fontsize and font in style-sheet as variables
+
+- documentation
+- release of jekyll template (bare without content)? 
 
 
 Below solution works on Github (doesn't require a plugin):

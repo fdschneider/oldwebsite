@@ -1,5 +1,5 @@
 ---
-permalink: /research/about/
+permalink: /about/
 layout: pages
 categories: about
 title: About myself

@@ -2,7 +2,7 @@
 permalink: /publications/kalinkat_2013/
 layout: article
 categories: article
-tag: allometry, predation
+tag: allometry
 title: Body masses, functional responses and predator–prey stability
 authors: Kalinkat, G., Schneider, F.D., Digel, C., Guill, C., Rall, B. C., Brose, U.
 date:  03-07-2013

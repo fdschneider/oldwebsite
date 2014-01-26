@@ -2,7 +2,7 @@
 permalink: /publications/schneider_2013/
 layout: article
 categories: article
-tag: predation
+tag: allometry
 title: "Beyond diversity: how nested predator effects control ecosystem functions"
 authors: Schneider, F.D., Brose, U.
 date: 01-01-2013

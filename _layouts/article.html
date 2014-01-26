@@ -5,40 +5,53 @@
 	<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 	
 	
-	<div class = "content">
+	<div class = "description">
 	
-	<h1> {{ page.title | markdownify }} </h1>
+	<h2> {{ page.title | markdownify }} </h2>
 	
 	<h5> {{ page.authors | prepend: '*by* &nbsp;' | markdownify }}</h5>
 	
-	<h5> {{ page.journal | prepend: '*published in* &nbsp;' | markdownify }}</h5>
 	
-	{% include sep %}
+	<div data-badge-type='donut' class='altmetric-embed' data-badge-popover='left' data-doi='{{page.doi}}' style = "float: right; padding-left: 10px; padding-right: 50px;"></div>
+
+	<h5> Published: {{ page.date | date_to_long_string }} </h5> 
+	<h5> In: <a href= "{{page.URL}}"><i>{{ page.journal }}</i>, {{page.volume}}:{{ page.pages }} </a></h5>
+	<h5> doi: {{page.doi }}</h5>
 	
-	<div data-badge-type='large-donut' class='altmetric-embed' data-badge-details='right' data-doi='{{page:doi}}'></div>
 	
-	{{ page.content | markdownify }}
-	
-		
-	<h2> Related publications </h2>
-	
-	<div class = "publist">
+
+	<h3> Related publications </h3>
+
+	<div class = "publist" style = "font-size: 0.8em; line-height:110%">
 		<ul>
 		{% for publication in site.pages %}
-			{% if publication.categories contains 'article' and publication.tag contains page.tag and publication.title != page.title %}	
+			{% if publication.categories contains 'article' and publication.tag contains page.tag and publication.date != page.date%}	
 			
 			 <li>
-			 <a href= "{{page.URL}}">{{ publication.authors }} ({{ publication.date | date: "%Y"}}), {{ publication.title }}, <i>{{ publication.journal }}</i>, {{publication.volume}}:{{ publication.pages }}</a>
+			 <a href= "{{publication.url}}">{{ publication.authors }} ({{ publication.date | date: "%Y"}}), {{ publication.title }}, <i>{{ publication.journal }}</i>, {{publication.volume}}:{{ publication.pages }}</a>
 			 </li>
 			
 			{% endif %} 			
 		{% endfor %}
 		</ul>
 	</div>
-			
+	
 	
 	
 	</div>
 	
+	
+	
+	<div class = "abstract">
+
+	{{ page.content | markdownify }}
+		
+	</div>
+	
+	
+	
+<div class = "up" >
+ <a rel = "prev" href="{{ site.url }}/publications/"> <span>  &circ; </span></a>
+</div>
 
 	{% include footer.html%}

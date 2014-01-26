@@ -61,7 +61,7 @@ title:
 					<td>	
 					<!-- <div class = "leftcontainer">	-->
 		
-		<h5><i>more from the blog:</i></h5>
+		<h5><a href = "{{ BASE_PATH}}/blog/"><i>more from the blog:</i></a></h5>
 		
 	{% for post in site.posts %}
 		{% if post.categories contains 'blog'%}	
@@ -91,7 +91,7 @@ title:
 					<!-- <div class = "rightcontainer">	-->
 					<td>
 
-	<h5><i>about my research:</i></h5>
+	<h5><a href = "{{ BASE_PATH}}/research/"><i>about my research:</i></a></h5>
 	
 	{% for page in site.pages %}
 			{% if page.categories contains 'research'%}	
@@ -134,7 +134,7 @@ title:
 	
 		
 	</div>	
-			<p style = "text-align: center; margin-top: 20px; margin-bottom: 20px">	&diams; </p>
+			{% include sep %}
 
 	<div class = "content">
 	<!-- quote of the month element -->
@@ -143,5 +143,20 @@ title:
 	
 	<!-- footer -->
 
+
+	
+<div class = "up" >
+ <a rel = "prev" href="{{ site.url }}/about/"> <span>  &circ; </span></a>
+</div>
+
+	
+<div class = "turn" style = " right: 0px" >
+ <a rel = "next" href="{{ site.url }}/research/"> <span> &rsaquo; </span></a>
+</div>
+
+
+<div class = "turn" style = " left: 0px" >
+ <a rel = "prev" href="{{ site.url }}/blog/"> <span> &lsaquo; </span></a>
+</div>
 
 {% include footer.html%}

@@ -2,7 +2,7 @@
 permalink: /projects/allometricfeeding/
 layout: project
 categories: research
-tag: predation
+tag: allometry
 title: Allometric feeding in multi-predator communities 
 date: 2012-11-30
 image: "![Allometric predation](/assets/img/2013-11-allometry-600.jpg)"

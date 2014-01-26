@@ -4,7 +4,7 @@ layout: pages
 title: My research
 ---
 
-<div>
+
 
 {% for page in site.pages %}
 	{% if page.categories contains 'about'%}	
@@ -30,11 +30,12 @@ title: My research
 		
 		<a href="{{ BASE_PATH }}{{ page.url }}">{{ page.image | markdownify }}</a>
 			<div class = "teaser"> </div>
-		 {{ page.teaser | markdownify }}
-		 {{ page.content | split:"<!-- more -->" | first  | markdownify }}
+
+		{{ page.partners | prepend: '**Project partners:** &nbsp;' | markdownify}}
+		<br>
+		{{ page.teaser | markdownify }}
+		{{ page.content | split:"<!-- more -->" | first  | markdownify }}
 		
-	<h3> Project partners</h3> 
-		{{ page.partners | markdownify}}
 		
 
 	<h3> Relevant publications </h3>
@@ -44,7 +45,7 @@ title: My research
 			{% if publication.categories contains 'article' and publication.tag contains page.tag%}	
 			
 			 <li>
-			 <a href= "{{publication.URL}}">{{ publication.authors }} ({{ publication.date | date: "%Y"}}), {{ publication.title }}, <i>{{ publication.journal }}</i>, {{publication.volume}}:{{ publication.pages }}</a>
+			 <a href= "{{publication.url}}">{{ publication.authors }} ({{ publication.date | date: "%Y"}}), {{ publication.title }}, <i>{{ publication.journal }}</i>, {{publication.volume}}:{{ publication.pages }}</a>
 			 </li>
 			
 			{% endif %} 			
@@ -65,5 +66,18 @@ title: My research
 
 
 
-
+<div class = "up" >
+ <a rel = "prev" href="{{ site.url }}/"> <span>  &circ; </span></a>
 </div>
+
+
+<div class = "turn" style = " right: 0px" >
+ <a rel = "next" href="{{ pages.last.url }}/"> <span> &rsaquo; </span></a>
+</div>
+
+
+<div class = "turn" style = " left: 0px" >
+ <a rel = "prev" href="{{ site.url }}/"> <span> &lsaquo; </span></a>
+</div>
+
+

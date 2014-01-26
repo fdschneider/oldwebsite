@@ -2,6 +2,8 @@
 
     {% include title.html %}
 
+
+	
 	<div class = "content">
 	
 		<h1> {{ page.title | markdownify }} </h1>
@@ -13,4 +15,9 @@
 	{{ content }}
 	</div>
 	
+	
+<div class = "up" >
+ <a rel = "prev" href="{{ site.url }}/"> <span>  &circ; </span></a>
+</div>
+
 	{% include footer.html%}

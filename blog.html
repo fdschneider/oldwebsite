@@ -1,7 +1,7 @@
 ---
 permalink: /blog/
 layout: 
-title: Ecology rocks!
+title: Blog
 ---
 
 
@@ -11,34 +11,36 @@ title: Ecology rocks!
 
 
 <div class = "content">
+
 {% for post in site.posts %}
 	{% if post.categories contains 'blog'%}
-	<h1>  {{ post.title | markdownify }} </h1>
+
+	<h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h1>
 	<h5 style = "text-align: center; margin-bottom: 2em;"> <i>by</i> <b>{{ post.author}}</b><i>, {{ post.date | date_to_long_string }}</i> </h5>
 
-		{% if forloop.index < 2 %}
+		{% if forloop.index < 3 %}
 			<div class = "teaser"> {{ post.teaser | markdownify }} </div>
-			{{ post.content | markdownify }}
-
-		{% elsif forloop.index > 2 and forloop.index < 5 %}
-			<div class = "teaser"> {{ post.teaser | markdownify }} </div>
-			{% if post.content contains "<!-- more -->" %}
-					{{ post.content | split:"<!-- more -->" | first  | markdownify % }}
-					{% include continue.html %}
-
-			{% elsif {{post.content | number_of_words}} > 185 %}
-				{{ post.content | markdownify | truncatewords:150  }} 
-				{% include continue.html %}
-			{% else %}
-				{{ post.content | markdownify}}
-			{% endif %} 
-		{% else forloop.index > 5 %}
-			{{ post.content | markdownify | truncatewords:50 }} <!--% remove: '<ul>' |  remove: '<li>' |  remove: '</li>' |  remove: '</ul>'-->
-            {% include continue.html %}
+			
 		{% endif %}
+
 	{%endif%}
-		<br>
 {% endfor %}
+
+</div>
+
+
+<div class = "up" >
+ <a rel = "prev" href="{{ site.url }}/"> <span>  &circ; </span></a>
+</div>
+
+
+<div class = "turn" style = " right: 0px" >
+ <a rel = "next" href="{{ site.url }}/"> <span> &rsaquo; </span></a>
+</div>
+
+
+<div class = "turn" style = " left: 0px" >
+ <a rel = "prev" href="{{ posts.last.url }}"> <span> &lsaquo; </span></a>
 </div>
 
 {% include footer.html%}

@@ -20,11 +20,11 @@ This means, you are free to use re-use content for private and public purposes a
 
 <br>
 <a href="http://scripts.sil.org/OFL_web"> <img alt="Open Font License" style="border-width:10; padding: 10px 10px; float:right" src="http://scripts.sil.org/cms/sites/nrsi/media/OFL_logo_rect_color.png" /></a>
-I am aiming at a minimalist, print-like layout because I believe that the reading experience benefits from that. The beautiful font that I make use of is called *Vollkorn* and it was designed by by [Friedrich Althausen](http://friedrichalthausen.de/vollkorn/) and liberally released under [Open Font Licence](http://scripts.sil.org/OFL_web).
+I am aiming at a minimalist, print-like layout because I believe that the reading experience benefits from that. The beautiful font that I make use of is called *Vollkorn 3.0.1* and it was designed by by [Friedrich Althausen](http://vollkorn-typeface.com/) and liberally released under [Open Font Licence](http://scripts.sil.org/OFL_web).
 
 This is a static website hosted at [Github.com](https://github.com/fdschneider) benefiting from *GitHub Pages*. The sites are generated using [Jekyll](http://jekyllrb.com/). 
 
 <br>
-The navigation of the web-site is trying to be intuitive. Simple menus without deep hierarchies and teaser overview pages of the blog and research site enable to find content quickly. You can turn pages by clicking on the lower right or left part of the screen. 
+The navigation of the web-site is trying to be intuitive. Simple menus without deep hierarchies and teaser overview pages of the blog and research site enable to find content quickly. Feedback is appreciated. 
 
 Right now, there is no commenting function yet. If you feel like giving feed-back, please don't hesitate to contact me via e-mail. 
