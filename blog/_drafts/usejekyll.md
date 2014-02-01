@@ -45,6 +45,11 @@ I did it following [Bradley Grainger](http://bradleygrainger.com/2011/09/07/how-
 			gem install kramdown
 	
 	
+## Keep it simple
+
+For webdesign, I preferred to realise my own simple stylesheets and site structure instead of using 
+	
+	
 ## initialise the blog structure using jekyll-bootstrap 
 
 Here, I followed the quick start instructions on the [Jekyll manpage](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
