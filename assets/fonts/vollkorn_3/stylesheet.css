@@ -58,7 +58,7 @@
     font-family: 'vollkornbolditalic';
     src: url('EOT/Vollkorn-bolditalic-webfont.eot');
     src: url('EOT/Vollkorn-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('WOFF/Vollkorn-bolditalic-webfont.woff') format('woff'),
+         url('WOFF/vollkorn-bolditalic-webfont.woff') format('woff'),
          url('TTF/Vollkorn-Bolditalic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;

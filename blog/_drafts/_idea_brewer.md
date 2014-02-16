@@ -6,6 +6,8 @@
 
 ### Good Tables
 
+
+
 ### Abstracts
 
 ### The Buzzword spiral
@@ -44,8 +46,11 @@ be active
 ### The boxplot
 
 ### The timeline
+#### 
+#### sparklines
 
 ### Maps
+Maps in R, GIS, 
 
 ### Big Data
 
