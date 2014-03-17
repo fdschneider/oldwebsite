@@ -6,7 +6,7 @@ date: 17/03/2014
 teaser: I started using *git* not long ago. But since then, I also started to encourage all my colleagues working in theoretical ecology to use a solid version control for their code development. This provokes much interest but also many questions. Therefore, I want to share this manual, that originally was written for internal use in our team. 
 ---
 
-I laid out my arguments for using version control in [this other article](). Since then, I wanted to write a follow up that explains *git* for researchers, because I see that this topic is badly neglected amongst theoretical ecologists.
+I laid out my arguments for using version control in [this other article](http://fdschneider.github.io/blog/2013/version_control/). Since then, I wanted to write a follow up that explains *git* for researchers, because I see that this topic is badly neglected amongst theoretical ecologists.
 
 First a few words in general about what *git* actually is and what it can do. 
 
