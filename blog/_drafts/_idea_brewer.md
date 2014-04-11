@@ -67,6 +67,8 @@ be active
 
 ### Font in R
 
+http://cran.r-project.org/web/packages/extrafont/
+
 ### High performance R
 
 ### Knitr and documentation in R
