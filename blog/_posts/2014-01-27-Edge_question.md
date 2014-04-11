@@ -21,11 +21,11 @@ A great comment on work ethics in science is commited by [Kathryn Clancy](http:/
 
 ## Of scientists and citizens
 
-Two somewhat complementary titles made me muse about the archetype of scientist and how it is percieved in the public. They question the nature of the scientist: [**"Only *Scientists* Can Do Science" by Kate Mills**](http://www.edge.org/response-detail/25504)  and [**"Scientists Should Stick to Science"  by Buddhini Samarasinghe**](http://www.edge.org/response-detail/25464). 
+Two somewhat complementary titles made me muse about the archetypic scientist and how it is percieved in the public. They really question the nature of scientists themselves: [**"Only *Scientists* Can Do Science" by Kate Mills**](http://www.edge.org/response-detail/25504)  and [**"Scientists Should Stick to Science"  by Buddhini Samarasinghe**](http://www.edge.org/response-detail/25464). 
 
 The first challenges that science is only science if done by a certified researcher. It's a plea for a true citizen science, going far beyond the stupid exploitation of brainpower for pattern recognition in Big Data sets (see below). Kate highlights that laymen, particularly children and teenagers, can enhance experimental design and formation of hypotheses, not *although*, but *because* they are untrained. An unprejudiced perspective can break thinking patterns and research traditions. 
 
-The second essay points the other way round. Scientists are citizens, too. They conclude what they conclude because of evidence. And they give public counsel, because of this evidence. This is their responsibility as citizens. Buddhini observes a systemaic exclusion of scientists from the policy making process, but also a self-imposed moderation towards political neutrality. That is disturbing in a public environment where "a sensationalizing mainstream media and politicians seeking re-election \[make\] settled facts to appear tentative."
+The second essay points the other way round. Scientists are citizens, too. They conclude what they conclude because of evidence. And they give public counsel because of this evidence. This is their responsibility as citizens. Buddhini observes a systematic exclusion of scientists from the policy making process, but more importantly a self-imposed moderation towards political neutrality. That is disturbing in a public environment where "a sensationalizing mainstream media and politicians seeking re-election \[make\] settled facts to appear tentative."
 
 ## The world is *sooo* complex
 

@@ -13,7 +13,7 @@ p { margin-top: 0.5em; margin-bottom: 0.5em;}
 
 h1 {font-family: 'vollkornmedium', times, 'serif'; 
 font-size:2.1em; line-height: 110%; letter-spacing: -0.02em; word-spacing: -0.02em; 
-text-align: center; padding: 0px 35px; }
+text-align: center; padding: 0px 35px 0px 35px; }
 
 h2 {font-family: 'vollkornmedium', times, 'serif'; 
 font-size:1.7em; line-height: 120%; letter-spacing: -0.02em; word-spacing: -0.02em; 
@@ -23,9 +23,9 @@ h3 {font-size:1.2em; line-height: 120%; text-align: left; margin-top: 1.5em;}
 h5 {font-size: 0.85em; margin-top: -3px; margin-bottom: 5px;  font-weight: 400; line-height: 120%;  margin-bottom: 10px;}
 
 
-a:link {color:#000000; text-decoration:none;}
-a:visited {color:#000000;text-decoration:none; }
-a:hover {color:#888888;text-decoration:none; }
+a:link {color:#000000; background: #FFF0D0; text-decoration:none;}
+a:visited {color:#000000; background: #FFF0D0; text-decoration:none; }
+a:hover {color:#888888; background: #FFF0D0; text-decoration:none; }
 
 blockquote{
 font-family: 'vollkornitalic';
@@ -35,6 +35,16 @@ letter-spacing: -3%;
 text-align: left;
 margin-bottom: 1em;
 }
+
+figcaption{
+font-family: 'vollkornitalic';
+font-size: 85%;
+line-height: 120%;
+letter-spacing: -3%;
+text-align: center;
+margin: 0px 20px 2em 20px;
+}
+
 
 .content{
 position: relative;
@@ -79,9 +89,9 @@ z-index: 2;
 
 }
 
-#titlebar a:link {color:#BBBBBB;text-decoration:none;}
-#titlebar a:visited {color:#BBBBBB;text-decoration:none;}
-#titlebar a:hover {color:#222222;text-decoration:none;}
+#titlebar a:link {color:#BBBBBB; background: #F5F5F5; text-decoration:none;}
+#titlebar a:visited {color:#BBBBBB; background: #F5F5F5; text-decoration:none;}
+#titlebar a:hover {color:#222222; background: #F5F5F5; text-decoration:none;}
 
 .home{
 font-family: 'vollkornbolditalic';
@@ -89,6 +99,7 @@ font-size: 110%;
 letter-spacing: -3%;
 color:#555555;
 }
+
 
 /* Publication list*/
 
@@ -165,6 +176,14 @@ margin-top: 15px;
 text-align: center; 
 width: 600px;
 height: 350px;
+}
+
+img {
+max-width: 100%;
+margin-top: 15px;
+display: block;
+margin-left: auto;
+margin-right: auto;
 }
 
 /* <span class="codedirection">rf.2ptnom-vinu@redienhcs.nairolf</span> */
