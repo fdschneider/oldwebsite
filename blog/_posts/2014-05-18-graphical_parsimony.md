@@ -49,20 +49,25 @@ One example Tufte uses is the boxplot, which was invented by John W. Tukey. See 
 Tufte argues that the four lines around the box, which depicts the range that includes 50% of the data, are completely redundant. They can be removed, because the range is already given by the ends of the whiskers. 
 
 But here is some critique: A box in a boxplot carries information, *because* it is a box. There is a social convention that makes the reader understand that the box *includes* the actual data that are not depicted here. In contrast, the mid-gap plot suggests this range is somehow *empty*. 
+
 Finally, plotting the box allows a more accurate estimation of the range of the inner 50% by the observer [^1]. 
 
-Still, you might have observed that in Tufte's version of the plot also the box around the plot and the axes are reduced to a minimum. They certainly do not contribute to the information carried by the graph and must be removed. Also, he pleas for plotting axis labels horizontally, because it causes less distraction. 
+Still, you might have observed that in Tufte's version of the plot also the box around the plot and the axes are reduced to a minimum. They certainly do not contribute to the information carried by the graph and must be removed. The axis itself is only as long as the range of axis labels provided.
+ 
+Also, he pleas for plotting axis labels horizontally, because it causes less distraction. 
+
+
 
 The use of color follows the same rules. 
 
-So, keep in mind that **starting from a blank screen**, each additional element of a graph (like lines, points, areas) and each element definition (like line width, line type or color) need to be justified by providing additional information.
+
+## Concluding remarks
+
+So, keep in mind that **starting from a blank screen**, each addition of an element to the graph (like lines, points, areas) and each element definition (like line width, line type or color) must be justified by providing additional information.
 
 - Boxes around the graph or a background color are in most cases not providing information. They might, if the graph is limited by the domain of investigation or simulation. 
 - Filling some element with color would be an additional definition. It would only be justified if it can be used to distinguish different kinds. For boxplots this is not necessary, since they can be labelled on the x axis. Many different point types or 
 - A line in the first place is a solid line of the default linewidth. Making it dashed or interrupted is distractive. Making it colored is only justified if it is 
-
-
-## Concluding remarks
 
 
 
