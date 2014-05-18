@@ -10,7 +10,7 @@ Good writing is one thing. But the complex results in science can not be transpo
 
 I recently got myself the books of Edward Tufte. His publications are said to have revolutionised visual communication. At least that's what visual communicators say. Only very slowly, his principles made their way into scientific graphs as well. But they are far from being universally applied.
 
-I want to summarize some of the points that I found extremely useful for my visual communication in science. 
+I want to summarize some of the points that I found extremely useful for visual communication in science. 
 
 ## Data ink ratio
 Occams razor on graphs. 
@@ -22,3 +22,23 @@ cluttery figure elements
 ## Noise vs. detail
 High resolution graphs allow the addition of small structured information. 
 Tufte investigated the importance of detail, which makes figures highly credible, and differentiates it from noise, which distracts without adding information. 
+
+
+
+## Graphical integrity
+
+Lie factor
+
+
+## Multi-layered information and scale
+
+High resolution graphs allow the addition of small structured information. 
+
+Tufte investigated the importance of detail, which makes figures highly credible, and differentiates it from noise, which distracts without adding information. 
+
+
+Small multiples as fourth dimension
+
+## "Above all else, show the data"
+
+Similar to the mention of detail above, Tufte demands to show the original data in the first place, besides means or statistical models, allowing the reader to draw own conclusions.

@@ -40,7 +40,7 @@ I did it following [Bradley Grainger](http://bradleygrainger.com/2011/09/07/how-
 			python ez_setup.py
 
 	7. Add the `C:/Python27/Scripts` directory to your PATH variable.  You might need to restart your Bash/Terminal/PowerShell. 
-	8. Install kramdown as Markdown interpreter. It is providing nice footnotes, which the default Maruku doesn't. 
+	8. Install kramdown as Markdown interpreter. It is providing nice footnotes, which the default Maruku doesn't, and it works well with Mathjax, a javascript interpreter for Tex equation syntax. 
 	
 			gem install kramdown
 	
@@ -49,7 +49,7 @@ I did it following [Bradley Grainger](http://bradleygrainger.com/2011/09/07/how-
 
 For webdesign, I preferred to realise my own simple stylesheets and site structure instead of using 
 	
-	
+
 ## initialise the blog structure using jekyll-bootstrap 
 
 Here, I followed the quick start instructions on the [Jekyll manpage](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
@@ -120,5 +120,3 @@ For each of these tasks solutions exist on the internet in form of nice tools th
 http://www.norberteder.com/blog/post/Jekyll-unter-Windows-einrichten.aspx
 http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html
 http://carlboettiger.info/2012/12/30/learning-jekyll.html
-	
-	
