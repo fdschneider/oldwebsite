@@ -7,7 +7,23 @@
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
    <title> {{site.title}} | {{ page.title }}</title>
    <meta name="author" content="{{ site.author.name }}" />
+   
+{% for category in page.categories %}
+
+    <meta property="article:tag" content="{{ category }}" />
+
+{% endfor %}
   
+{% if page.teaser %}
+
+    <meta name="description" content="{{ page.teaser | truncatewords: 200 | strip_newlines | escape_once }}" />
+
+{% else %}
+
+    <meta name="description" content="{{ content | strip_html | truncatewords: 200 | strip_newlines | escape_once }}" />
+
+{% endif %}
+
    <link rel="stylesheet" href="{{ BASE_PATH }}/assets/style.css" type="text/css" />
 
 <!-- Vollkorn 3.0.1 Web-font 
