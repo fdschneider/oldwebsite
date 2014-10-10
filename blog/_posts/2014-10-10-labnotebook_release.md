@@ -3,8 +3,7 @@ layout: posts
 title: lablog - a Jekyll template for lab notebooks
 author: Florian Schneider
 date: 10/10/2014
-teaser:
-I was looking for a while for a way to document my progress, build a knowledgebase and structure and manage projects.  Most classic Wikis do only part of that job. So I just put together a nice way to keep a personal (or collaborative) lab notebook using the static site generator [Jekyll](http://jekyllrb.com/).
+teaser: I was looking for a while for a way to document my progress, build a knowledgebase and structure and manage projects.  Most classic Wikis do only part of that job. So I just put together a nice way to keep a personal (or collaborative) lab notebook using the static site generator [Jekyll](http://jekyllrb.com/).
 ---
 
 One of the problems with wikis was, that I wanted a chronological documentation of progress. That is an important feature of a lab notebook, since it allows to trace the development of an idea much better than a wiki which only shows the current status of thought.
