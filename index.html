@@ -1,5 +1,5 @@
 ---
-layout: 
+layout:
 title:
 ---
 
@@ -11,61 +11,61 @@ title:
 	<br>
 
 <div class = "content">
-	
+
 	<!-- newest blogpost -->
-	
+
 		{% for post in site.posts %}
-		{% if post.categories contains 'blog'%}	
-			
+		{% if post.categories contains 'blog'%}
+
 			{% if forloop.index < 2 %}
-				
+
 				<h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h1>
 				<h5 style = "text-align: center; margin-bottom: 2em;"> <i>by</i> <b>{{ post.author}}</b><i>, {{ post.date | date_to_long_string }}</i> </h5>
 
 				<div class = "teaser"> {{ post.teaser | markdownify  }} </div>
-	
+
 				{% include continue.html %}
-				
-				
-			{% endif %} 
+
+
+			{% endif %}
 		{% endif %}
-		
+
 		{% endfor %}
 
 	{% include sep %}
-		
+
 	<!-- about myself -->
-	
+
 	<!-- about myself element -->
 		{% for page in site.pages %}
-			{% if page.categories contains 'about'%}	
-			
+			{% if page.categories contains 'about'%}
+
 				<p class = "two-col">	{{ page.teaser }} </p>
-				
+
 		<a class = "continue" href="{{ BASE_PATH }}{{ page.url }}"> Read more about myself! </a><br>
-			
-			{% endif %} 			
+
+			{% endif %}
 		{% endfor %}
-		
+
 	{% include sep %}
 	</div>
 
 	<!-- bloglist and research -->
-		
+
 	<div class = "indexcontent">
 
 	<!-- Blog preview on Index Site -->
-		
+
 			<table>
 				<tr>
-					<td>	
+					<td>
 					<!-- <div class = "leftcontainer">	-->
-		
+
 		<h5><a href = "{{ BASE_PATH}}/blog/"><i>more from the blog:</i></a></h5>
-		
+
 	{% for post in site.posts %}
-		{% if post.categories contains 'blog'%}	
-				
+		{% if post.categories contains 'blog'%}
+
 			{% if forloop.index == 2 %}
 				<h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h2>
 				<h5> <i>by</i> <b>{{ post.author}}</b><i>, {{ post.date | date_to_long_string }}</i> </h5>
@@ -73,36 +73,36 @@ title:
 				{% if post.content contains "<!-- more -->" %}
 					{{ post.content| split:"<!-- more -->" | first | markdownify  % }}
 					{% include continue.html %}
-				{% else %}	
-					{{ post.content | markdownify | truncatewords:20 |  remove: '<ul>' |  remove: '<li>' |  remove: '</li>' |  remove: '</ul>' }} 
+				{% else %}
+					{{ post.content | markdownify | truncatewords:20 |  remove: '<ul>' |  remove: '<li>' |  remove: '</li>' |  remove: '</ul>' }}
 					{% include continue.html %}
 				{% endif %}
-			{% elsif forloop.index > 2 and forloop.index < 6 %}
+			{% elsif forloop.index > 2 and forloop.index < 8 %}
 				<h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify }}</a></h3>
 				<h5> <i>by</i> <b>{{ post.author}}</b><i>, {{ post.date | date_to_long_string }}</i> </h5>
-				
+
 			{% endif %}
-		
+
 		{% endif %}
-					
+
 	{% endfor %}
-					</td>		
+					</td>
 					<td style = "width:30px"> </td>
 					<!-- <div class = "rightcontainer">	-->
 					<td>
 
-	<h5><a href = "{{ BASE_PATH}}/research/"><i>about my research:</i></a></h5>
-	
+	<h5><a href = "{{ BASE_PATH }}/research/"><i>about my research:</i></a></h5>
+
 	{% for page in site.pages %}
-			{% if page.categories contains 'research'%}	
-		
+			{% if page.categories contains 'research'%}
+
 				<h2><a href="{{ BASE_PATH }}{{ page.url }}">{{ page.title | markdownify }}</a></h2>
-				 
-				 {{ page.teaser | markdownify  }}			
-				 
+
+				 {{ page.teaser | markdownify  }}
+
 				 <h5>{{ page.partners  | prepend: '*Collaborators:* &nbsp;' | markdownify}}</h5>
 
-			{% endif %} 			
+			{% endif %}
 	{% endfor %}
 					</td>
 				</tr>
@@ -110,46 +110,46 @@ title:
 
 	</div>
 
-	
+
 
 	<!-- Publication list overview -->
 			{% include sep %}
 
 	<div class = "indexcontent">
-		
+
 	<h2><a href = "{{ BASE_PATH }}publications/">Selected publications</a></h2>
 	<div class = "publist">
 		<ul>
 		{% for page in site.pages %}
-			{% if page.categories contains 'article' and page.priority contains 'A'%}	
-			
+			{% if page.categories contains 'article' and page.priority contains 'A'%}
+
 			 <li>
 			 <a href= "{{ BASE_PATH }}{{page.url}}">{{ page.authors }} ({{ page.date | date: "%Y"}}), {{ page.title }}, <i>{{ page.journal }}</i>, {{page.volume}}:{{ page.pages }}</a>
 			 </li>
-			
-			{% endif %} 			
+
+			{% endif %}
 		{% endfor %}
 		</ul>
 	</div>
-	
-		
-	</div>	
+
+
+	</div>
 			{% include sep %}
 
 	<div class = "content">
 	<!-- quote of the month element -->
 	{% include quote.html %}
-	</div>	
-	
+	</div>
+
 	<!-- footer -->
 
 
-	
+
 <div class = "up" >
  <a rel = "prev" href="{{ site.url }}/sitemap.html"> <span>  &circ; </span></a>
 </div>
 
-	
+
 <div class = "turn" style = " right: 0px" >
  <a rel = "next" href="{{ site.url }}/research/"> <span> &rsaquo; </span></a>
 </div>
