@@ -43,10 +43,7 @@ There are many reasons why you might want to clarify the terms and conditions fo
 7. **liability:** Since you give your software away for free, you want others to use your work on their own risk. But you do not want to be held liable for any errors or harm that arises from that use.
 9. **reproducibility:** The claims you make in a research paper depend on the whole process of data aquisition, data management, computational analysis, maybe some simulations. The credibility of your research depends on that entire chain. If you make the steps of your research public, reviewers and colleagues will be able to follow it thoroughly and understand it better. Or they might find a flaw that alters your conclusion. The propagation of wrong claims will become less likely.
 
-[^6]: **UPDATE 02.03.2015:** A very detailed report on the disadvantages of non-commercial license by
-the german [iRights group](http://irights.info/) can be found in english
-translation on  [the Open Knowledge
-Blog](http://blog.okfn.org/2013/01/08/consequences-risks-and-side-effects-of-the-license-module-non-commercial-use-only-2/) (Thanks to [@madprime](https://twitter.com/madprime) and [@punkish](https://twitter.com/punkish) for pointing me to this issue)
+[^6]: **UPDATE 02.03.2015:** A very detailed report on the disadvantages of non-commercial license by the german [iRights group](http://irights.info/) can be found in english translation on  [the Open Knowledge Blog](http://blog.okfn.org/2013/01/08/consequences-risks-and-side-effects-of-the-license-module-non-commercial-use-only-2/) (Thanks to [@madprime](https://twitter.com/madprime) and [@punkish](https://twitter.com/punkish) for pointing me to this issue)
 
 Some of these arguments apply only to certain kinds of work. Many of them are compatible, like 2 and 6, some of them are mutually exclusive, like 1 and 4. Some are only slightly different, like 3 and 6. Some are mandatory in certain circumstances, e.g. 8, if a journal requires the publication of data and code.   Most of them have moral implications. So first of all, start thinking about your own motivation and your responsibilities for publishing data, code or creative content.
 
