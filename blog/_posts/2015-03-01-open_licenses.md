@@ -38,21 +38,26 @@ There are many reasons why you might want to clarify the terms and conditions fo
 2. **reduce limits for access:** this is the core idea of open access. The work is meant to be read or applied, the data are meant to be analyzed by anyone. Thus you want to enable access by anybody with internet access. You want to maximize the visibility.  
 3. **facilitate re-use:** If you want to facilitate the re-use and modification of your text, code or data, you would want a *permissive* license, such as the [MIT License](http://opensource.org/licenses/MIT) or [Apache License](https://www.apache.org/licenses/LICENSE-2.0.html) (for software) or [Creative Commons attribution License](https://creativecommons.org/licenses/by/4.0/) (for text and data). That would allow others to use your work it in their own interest and even make their own product out of it. Still, attribution of authorship is important for you.
 4. **free as in freedom:** Ideas must remain free to be adopted and modified by anyone. No one must be able to bind them by law and make them their own. This is the idea of free software. [Copyleft Licenses](https://en.wikipedia.org/wiki/Copyleft) such as [GNU General Public Licenses](https://www.gnu.org/licenses/) or [Creative Commons share-alike Licenses](https://creativecommons.org/licenses/by-sa/4.0/) ensure that all derivatives of your work will remain free.
-5. **non-commercial, non-governmental interest:** You want to prevent particularly that somebody makes money with your idea. Your idea is meant to benefit people, not companies. To prevent the commercial use of your work, chose [GNU General Public Licenses](https://www.gnu.org/licenses/) or the [CC non-commercial](https://creativecommons.org/licenses/by-nc/4.0/) option.
+5. **non-commercial, non-governmental interest:** You want to prevent particularly that somebody makes money with your idea. Your idea is meant to benefit people, not companies. To prevent the commercial use of your work, chose  the [CC non-commercial](https://creativecommons.org/licenses/by-nc/4.0/) option. Although, think twice! Making your work 'non-commercial' also disallows use by nonprofit organisations and might not stop commercial misuse since they have way more legal power than you do[^6].
 6. **public interest:** If you work on a University, directly or indirectly, your employer is the taxpayer. Thus, anything you develop or write in a way belongs to the public. That includes companies, too. It must be openly accessible and reusable by anyone to increase the revenue of the public investment. A [Public Domain](https://creativecommons.org/publicdomain/) dedication is a waiver for all rights on the work.
-7. **liability:** Since you give your software away for free, you want others to use your work on their own risk. But you do not want to be held liable for any errors or harm that arises from that use. 
+7. **liability:** Since you give your software away for free, you want others to use your work on their own risk. But you do not want to be held liable for any errors or harm that arises from that use.
 9. **reproducibility:** The claims you make in a research paper depend on the whole process of data aquisition, data management, computational analysis, maybe some simulations. The credibility of your research depends on that entire chain. If you make the steps of your research public, reviewers and colleagues will be able to follow it thoroughly and understand it better. Or they might find a flaw that alters your conclusion. The propagation of wrong claims will become less likely.
+
+[^6]: **UPDATE 02.03.2015:** A very detailed report on the disadvantages of non-commercial license by
+the german [iRights group](http://irights.info/) can be found in english
+translation on  [the Open Knowledge
+Blog](http://blog.okfn.org/2013/01/08/consequences-risks-and-side-effects-of-the-license-module-non-commercial-use-only-2/) (Thanks to [@madprime](https://twitter.com/madprime) and [@punkish](https://twitter.com/punkish) for pointing me to this issue)
 
 Some of these arguments apply only to certain kinds of work. Many of them are compatible, like 2 and 6, some of them are mutually exclusive, like 1 and 4. Some are only slightly different, like 3 and 6. Some are mandatory in certain circumstances, e.g. 8, if a journal requires the publication of data and code.   Most of them have moral implications. So first of all, start thinking about your own motivation and your responsibilities for publishing data, code or creative content.
 
 ## Ask yourself!
 
 What kind of content do you produce? Is your content creative or non-creative?  
-Who did you make it for? For yourself, to boost your own research success or for others? Do you want others to modify and built upon your work or do you just publish to make it more accessible and visible for an audience or reviewers? Do you want to retain full rights to monetize and build upon it or do feel obliged to give it away for others to use it as they think is best?
-Do you have to ensure open access to your work because the university or your fund requires it?  Do you want to publish it for documentation, and reproducibility of your research only, not encouraging the re-use, because it is specific and developed for a particular project? Do you have to publish your data or code because the journal requires it?  
+Who did you make it for? For yourself, to boost your own research success or for others? Do you want others to modify and built upon your work or do you just publish to make it more accessible and visible for an audience or reviewers? Do you want to retain full rights to monetize and build upon it? Does your employer (a public university?) or funding agency allow that?  
+Or do you just feel obliged to give it away for others to use it as they think is best? Do you have to ensure open access to your work because the university or your fund requires it?  Do you want to publish it for documentation, and reproducibility of your research only, not encouraging the re-use, because it is specific and developed for a particular project? Do you have to publish your data or code because the journal requires it?  
 Do you want to be acknowledged for your work at all or did you just make something that you believe is useful? Do you need the reputation to increase your impact and the perception of your work in general?  
 
-Only after you know what you want you can choose your license.
+Think about it! Only after you know what you want you can choose your license.
 
 ## What license to choose?
 
@@ -108,3 +113,7 @@ The open source software community lives on platforms like [GitHub](http://www.g
 ## Conclusion
 
 As an author of research articles, computer code and data you should be aware of the different possibilities of licensing. Not specifying a license hinders the re-use and distribution of your work. Choose an open license that suits your aims!
+
+
+
+---
