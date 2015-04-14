@@ -1,5 +1,5 @@
 
-permalink: /blog/:year/:title 
+permalink: /blog/:year/:title
 server: true
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
@@ -13,7 +13,7 @@ pagecategories: [about, research, publist, quote]
 
 excerpt_separator: "<!-- more -->"
 
-# Themes are encouraged to use these universal variables 
+# Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
 title : Florian D. Schneider
@@ -25,6 +25,7 @@ author :
   #twitter : username
   #feedburner : feedname
 
-  
+disqus_short_name : fdschneider
+
 #markdown:      maruku
 markdown:      kramdown

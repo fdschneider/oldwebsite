@@ -4,7 +4,8 @@ title: "My rant on social media for science"
 date: "2014-12-27"
 author: "@f_d_schneider"
 teaser: "When people were proposing to me that I should be more active on social media, like Twitter or on my Blog, or even Facebook, to promote my own work, my scepticism was huge. That intuitive scepticism was holding me back without being really rational or objective or well funded on research. I finally understood  what was troubling me last week in Lille at #BESSFE."
-disqus: true
+comments: true
+disqus_identifier: 3388872858
 ---
 
 That is, at the joint meeting of the British Ecological Society and the Société Française d'Ecologie. During that meeting, I was actively using the Twitter account that I had created earlier this year for the first time. I followed the tweets of others and was amazed by the interactions that occurred: I interacted with people that were on the conference without meeting them in real. I met friends and colleagues that were not attending the conference. I even got a question on my talk from somebody I did not know and who was not even on the conference. How weird is that?

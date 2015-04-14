@@ -4,7 +4,8 @@ title: "Open Licenses for Science"
 author: Florian D. Schneider
 categories: blog
 teaser: Data, computer code and manuscripts are the produce of scientific work. It is what we make. Nowadays, people claim that all of it has to be open access or open source. But what is that all about?
-disqus: true
+comments: true
+disqus_identifier: 3559158886
 ---
 
 
