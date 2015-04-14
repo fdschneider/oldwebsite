@@ -11,6 +11,7 @@ include: ["_pages","_publications"]
 relative_permalinks: false
 pagecategories: [about, research, publist, quote]
 
+url: http://fdschneider.github.io
 excerpt_separator: "<!-- more -->"
 
 # Themes are encouraged to use these universal variables
