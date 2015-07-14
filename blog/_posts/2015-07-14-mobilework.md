@@ -10,7 +10,7 @@ disqus_identifier: 3388872878
 
 After one and a half years of living apart from my partner, I decided to go on a 70% position at the benefit of working in home office and on multiple work places. I am also curious about exploring co-working spaces, or working in one of the nice cafés in town.
 
-![](../_assets/img/homeoffice.jpg)
+![](/assets/img/homeoffice.jpg)
 
 *My office on a sunny day: the small yard of my house is full of plants. There is my own Wifi and coffee or tea as much as I want.*
 
