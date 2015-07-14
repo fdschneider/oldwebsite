@@ -2,8 +2,8 @@
 layout: posts
 title: Thoughts on mobile work
 author: Florian Schneider
-date: 14/05/2015
-teaser: After two years in Montpellier my PostDoc for the CASCADE project draws to an end. Three months left to finish pending tasks, write publications and attend a meeting on Crete. Luckily, I was able to extend my contract until August with the unique opportunity to explore a new working concept: part-time, mobile and home-office work.
+date: "2015-05-14"
+teaser: 'After two years in Montpellier my PostDoc for the CASCADE project draws to an end. Three months left to finish pending tasks, write publications and attend a meeting on Crete. Luckily, I was able to extend my contract until August with the unique opportunity to explore a new working concept: part-time, mobile and home-office work.'
 ---
 
 After one and a half years of living apart from my partner, I decided to go on a 70% position at the benefit of working in home office and on multiple work places. I am also curious about exploring coworking spaces, or working in one of the nice cafés in town.
