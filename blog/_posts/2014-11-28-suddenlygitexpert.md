@@ -11,4 +11,4 @@ It actually was the second time, I was talking about git version control in fron
 
 So, I am sharing the slides here (CC-BY, [original repository on GitHub](https://github.com/cascade-wp6/git_intro/)):
 
-<iframe src="https://cascade-wp6.github.io/git_intro/" style="width: 600px; height: 350px"></iframe>
+<iframe src="https://fdschneider.github.io/git_intro/" style="width: 600px; height: 350px"></iframe>
