@@ -1,4 +1,4 @@
---
+---
 permalink: /publications/mcelroy_2015/
 categories: article
 layout: article
